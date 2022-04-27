@@ -1,4 +1,4 @@
-name: Website CI
+name: Production Website CI
 
 on:
   push:
@@ -11,32 +11,63 @@ on:
 
 jobs:
   build:
-    name: Build the website
+    name: Build and deploy the website
     runs-on: ubuntu-latest
     if: |
       !contains(github.event.head_commit.message, 'skip-ci')
     steps:
-      - uses: actions/checkout@v2
+      - id: enarx_release
+        uses: pozetroninc/github-action-get-latest-release@master
+        with:
+          owner: enarx
+          repo: enarx
+          excludes: draft
+      - name: Checkout website
+        uses: actions/checkout@v3
+        with:
+          path: main
+      - name: Checkout Versioned docs
+        uses: actions/checkout@v3
+        with:
+          repository: enarx/enarx
+          ref: ${{ steps.enarx_release.outputs.release }}
+          path: 'versioned'
+      - name: Overlay versioned documentation to staging
+        run: '(test -d versioned/docs/ && rsync -avp versioned/docs/* main/versioned_staging) || echo versioned docs do not exist, skipping step'
+        shell: bash
+      - name: Merging documentation
+        run: rsync -avp --ignore-times main/versioned_staging/* main/docs/
+        shell: bash
 
-      - name: Use Node.js 16.x
+      - name: Use Node.js 18.x
         uses: actions/setup-node@v2
         with:
-          node-version: '16.x'
-
+          node-version: '18.x'
       - name: Install dependencies
         run: yarn install
-
+        working-directory: ./main
       - name: Run ESLint
         run: yarn lint
-
+        working-directory: ./main
       - name: Build the website
         run: yarn build
-
-      - name: Deploy to GitHub Pages
-        if: github.event_name != 'pull_request'
-        uses: crazy-max/ghaction-github-pages@v2
+        working-directory: ./main
+      # - name: Deploy to GitHub Pages
+      #   if: github.event_name != 'pull_request'
+      #   uses: crazy-max/ghaction-github-pages@v2
+      #   with:
+      #     target_branch: gh-pages
+      #     build_dir: ./main/build
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload to Netlify
+        uses: nwtgck/actions-netlify@v1.2.3
         with:
-          target_branch: gh-pages
-          build_dir: build
+          publish-dir: './main/build'
+          production-branch: 'main'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 5

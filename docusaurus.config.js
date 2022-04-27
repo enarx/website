@@ -39,7 +39,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/enarx/enarx.github.io/blob/main',
+          editUrl: 'https://github.com/enarx/website/blob/main',
           remarkPlugins: [require('mdx-mermaid')],
         },
         theme: {
@@ -78,7 +78,7 @@ const config = {
               },
               {
                 label: 'Installation Guide',
-                to: '/docs/Installation/Introduction',
+                to: '/docs/Install',
               },
               {
                 label: 'WebAssembly Guide',
@@ -197,7 +197,7 @@ const config = {
               },
               {
                 label: 'Installation Guide',
-                to: '/docs/Installation/Introduction',
+                to: '/docs/Install',
               },
               {
                 label: 'WebAssembly Guide',

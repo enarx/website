@@ -26,7 +26,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Installation Guide',
-      items: ['Installation/Introduction','Installation/Requirements','Installation/Setup','Installation/Enarx','Installation/Wasm','Installation/Conclusion',],
+      items: ['Install',],
     },
     {
       type: 'category',

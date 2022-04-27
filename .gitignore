@@ -12,6 +12,7 @@ node_modules
 
 yarn-error.log
 build
+versioned
 coverage
 .docusaurus
 .cache-loader

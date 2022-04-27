@@ -13,7 +13,9 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "lint": "eslint ./src/",
-    "lint:fix": "eslint ./src/ --fix"
+    "lint:fix": "eslint ./src/ --fix",
+    "production_build": "hack/production.sh",
+    "preview_build": "hack/preview.sh"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-beta.18",
