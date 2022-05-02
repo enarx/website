@@ -1,13 +1,16 @@
 [build]
   base = ""
   publish = "build"
-  command = "hack/preview.sh"
+  command = "hack/production.sh"
 
 [context.production]
   command = "hack/production.sh"
 
 [context.deploy-preview]
-  command = "hack/preview.sh"
+  command = "hack/production.sh"
 
 [context.branch-deploy]
   command = "hack/production.sh"
+
+[context.staging]
+  command = "hack/preview.sh"
