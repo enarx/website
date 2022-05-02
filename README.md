@@ -18,8 +18,8 @@ To install the website locally and build it, you need the following installed:
 Before you start, install the dependencies. Clone the repository and navigate to the directory:
 
 ```sh
-git clone https://github.com/enarx/enarx.github.io.git
-cd enarx.github.io
+git clone https://github.com/enarx/website.git
+cd website
 ```
 
 The Enarx website uses [Docusaurus](https://docusaurus.io/) to build a customizable and optimized website.
@@ -37,6 +37,7 @@ yarn install
 To start a local development server, run: 
 
 ```sh
+yarn preview_build
 yarn start
 ```
 
@@ -46,10 +47,16 @@ This starts a local development server and opens up a browser window. Most chang
 
 ## Building the website
 
-To build the website, run the following command: 
+To build the website including the latest pre-release documention from `enarx/enarx` project, run the following command: 
 
 ```sh
-yarn build
+yarn preview_build
+```
+
+Alternatively, to build the website including the latest released `enarx/enarx` project, run the following command: 
+
+```sh
+yarn production_build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service. You can run the following command to serve the build:
