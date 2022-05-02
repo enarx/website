@@ -13,4 +13,4 @@ git clone --branch ${REF} https://github.com/${ORG}/enarx.git versioned
 
 yarn install
 yarn lint
-yarn build
+docusaurus build

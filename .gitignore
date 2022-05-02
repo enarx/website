@@ -16,3 +16,5 @@ versioned
 coverage
 .docusaurus
 .cache-loader
+
+docs/Install.md
