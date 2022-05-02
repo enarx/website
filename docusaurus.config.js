@@ -288,7 +288,8 @@ const config = {
             ],
           },
         ],
-        copyright: `Enarx - ${new Date().getFullYear()} - <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons</a> - <a href="https://enarx.dev/sponsors">Sponsors</a>`,
+        copyright: `Enarx - ${new Date().getFullYear()} - <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons</a> - <a href="https://enarx.dev/sponsors">Sponsors</a> <br />
+        <a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-light.svg" alt="Deploys by Netlify" /> </a>`,
       },
       prism: {
         theme: lightCodeTheme,
