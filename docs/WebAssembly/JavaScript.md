@@ -11,9 +11,6 @@ beta Shopify Scripts Platform.
 
 A Quick Note that, all of the build dependencies of the Javy Toolchain have to be installed after forking the Github Repository on your Machine and then executing all of the commands which are required for installation of the Build Dependencies.
 
-### msgpack-tools
-
-[msgpack-tools](https://github.com/ludocode/msgpack-tools) contains simple command-line utilities for converting MessagePack to JSON and vice-versa.
 
 ### Wasmtime
 
@@ -68,31 +65,20 @@ After executing this command, you will have the WebAssembly Binary in your direc
 
 ![WASM Binary](/img/tutorial/WASMBinaryJS.png?raw=true)
 
-### STEP 2
+### Step 2:
 
-After you are done generating the WebAssembly Binary, you will have to create a `JSON` file in this same directory.
-
-The reason you need to create this `JSON` file is because the default implementation of Javy expects a `msgpack` input to be sent through `stdin`
-
-```JSON
-10
-```
-
-and the reason I have passed `10` as value in JSON is because if we have a look at our Fibonacci Function, it is asking for a parameter `num` in order to calculate our Fibonacci term, and by passing 10 as value it will be substituted in place of the parameter. 
-
-### STEP 3 
-
-Now, since the default implementation expects a `msgpack` input, we will have to convert our `JSON` to a suitable `msgpack` format and we will accomplish this using the `msgpack-tools`.
+After you have the WebAssembly Binary with you, you need to execute the following command 
+in order to run it on the top of Wasmtime:
 
 ```bash
-json2msgpack -i input.json | wasmtime run index.wasm | msgpack2json
+echo "10" | wasmtime run index.wasm
 ```
-If we have a look at this command first of all we pass our `input.json` file as input to `json2msgpack` and then execute it on the top of Wasmtime. 
-Also since the message will be `messagepack` encoded, so you will need to decode it with a tool like 
-`msgpack2json`.
 
-### STEP 4 : 
+As of now the Default implementation of the Javy Toolchain does not allow the user to dynamically enter the input instead we have to directly serve it via command line arguments on 
+the terminal. 
+
+That is why, we are explicitly appending `echo "10"` in order to append the value 10 to the 
+fibonacci function argument. This value will get substituted in place of the `num` parameter which is present in the Fibonacci Function, and hence you will get the 10th Fibonacci Sequence as the Output. 
+### STEP 3 : 
 
 Finally you will be able to see your Output displayed and working flawlessly on Wasmtime
-
-![Output Screenshot](/img/tutorial/OutputScreenshot.png?raw=true)
