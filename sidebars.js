@@ -41,7 +41,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Contributing Guide',
-      items: ['Contributing/Introduction','Contributing/Onboarding','Contributing/Code','Contributing/Coding-Style','Contributing/Git-hook','Contributing/PRs','Contributing/Issues','Contributing/RFCs','Contributing/Docs','Contributing/Outreach','Contributing/Lab', 'Contributing/Release'],
+      items: ['Contributing/Introduction','Contributing/Onboarding','Contributing/Code','Contributing/Coding-Style','Contributing/Git-hook','Contributing/PRs','Contributing/Issues','Contributing/RFCs','Contributing/Docs','Contributing/Outreach','Contributing/Lab','Contributing/Debug', 'Contributing/Release'],
     },
     {
       type: 'category',
@@ -56,7 +56,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Technical Overview',
-      items: ['Technical/Introduction','Technical/Problem','Technical/Design','Technical/Threat','Technical/Trust-Architecture','Technical/TEE','Technical/Components','Technical/Runtime','Technical/WebAssembly','Technical/Process-Flow','Technical/Syscall-Proxy','Technical/Hardware','Technical/Builds','Technical/Vulnerabilities-Attacks','Technical/AMD-SEV','Technical/AMD-SEV-Attestation','Technical/AMD-SNP','Technical/Intel-SGX','Technical/Intel-SGX-Measurement','Technical/Cases','Technical/FAQ',],
+      items: ['Technical/Introduction','Technical/Problem','Technical/Design','Technical/Threat','Technical/Trust-Architecture','Technical/TEE','Technical/Components','Technical/Runtime','Technical/WebAssembly','Technical/Process-Flow','Technical/Syscall-Proxy','Technical/Hardware','Technical/Builds','Technical/Vulnerabilities-Attacks','Technical/AMD-SEV','Technical/AMD-SEV-Attestation','Technical/AMD-SNP','Technical/Intel-SGX','Technical/Intel-SGX-Measurement','Technical/Attestation-Syscall','Technical/Cases','Technical/FAQ',],
     },
   ],
 };
