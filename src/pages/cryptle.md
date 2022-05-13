@@ -18,7 +18,7 @@ There are three ways to play Cryptle: Single Player, Multi Player, and Hack Chal
 
 In the **Multi Player** mode, the secret word is not selected by the application itself, but instead is (or rather are) suggested by the players themselves. Each player proposes words that are most likely to match those sent by others. The words are sent to the Cryptle application running in an Enarx Keep (a specific TEE instance) and are only revealed to the players when there’s a match between the secret words.
 
-The **Hack Challenge** provides a more elaborate way to engage with the game: players may write an open source application to run on the host side with root privileges with the goal of deriving or otherwise guessing the secret words. Further information is provided below:
+The **Hack Challenge** provides a more elaborate way to engage with the game: players may write an open source application to run on the host side with root privileges. The goal remains the same: to guess the secret words. Further information is provided below:
 
 ## Participation
 
@@ -72,7 +72,7 @@ The following are out of scope vulnerabilities:
 - Modifying the executable,
 - Social engineering.
 
-# Prizes
+## Prizes
 
 Prizes will be awarded to players who have successfully “hacked” Enarx within the scope described above.
 
