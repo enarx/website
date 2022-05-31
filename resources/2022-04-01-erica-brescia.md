@@ -11,9 +11,6 @@ tags: [Webinar, Profian's Blog]
   
 <iframe src="https://www.youtube.com/embed/03uAyT_UWA0" height="480" width="640" allowFullScreen></iframe>
 
-Full transcript at: https://blog.profian.com/erica-brescia-the-future-of-cloud-wasm-and-open-source/
-
-
 **Source**: Wasm Builders
 
-**Link**: https://www.youtube.com/watch?v=03uAyT_UWA0
+**Link**: https://blog.profian.com/erica-brescia-the-future-of-cloud-wasm-and-open-source/

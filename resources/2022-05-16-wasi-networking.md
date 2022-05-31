@@ -1,8 +1,8 @@
 ---
-slug: 2022-05-16-wasm-day
+slug: 2022-05-16-wasi-networking
 title: "WASI Networking: Towards a World Wide WebAssembly"  
 authors: [nathaniel, harald]
-tags: [Event]
+tags: [Event, Profian's Blog]
 ---
 
 **Title**: WASI Networking: Towards a World Wide WebAssembly    
@@ -14,4 +14,4 @@ The advancement of WASI, the WebAssembly System Interface, is key to pushing Web
 
 **Source**: KubeCon / Wasm Day Europe 2022
 
-**Link**: https://cloudnativewasmdayeu22.sched.com/event/zgbP/wasi-networking-towards-a-world-wide-webassembly-nathaniel-mccallum-harald-hoyer-profian
+**Link**: https://blog.profian.com/wasi-networking/
