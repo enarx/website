@@ -294,6 +294,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['bash','c','cpp','csharp','go','haskell','java','javascript','kotlin','powershell', 'python', 'ruby','rust','swift','toml','typescript','wasm','yaml','zig'],
       },
     }),
 };

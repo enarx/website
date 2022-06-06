@@ -1,37 +1,24 @@
 # WebAssembly with Rust
 
-![Rust WASI](/img/tutorial/rustWasi.jpg?raw=true)
+## Install Rust
 
-## Environment setup
+To install Rust, go to [rust-lang.org](https://www.rust-lang.org/tools/install) and follow the instructions using rustup.
 
-To get started, you must install the following:
-
-### Rust
-
-Go to [rust-lang.org](https://www.rust-lang.org/tools/install) and follow the instructions using rustup.
-
-### Wasmtime
-
-You will find wasmtime at [wasmtime.dev](https://wasmtime.dev/)
-
-### Install the WebAssembly Rust toolchain:
+## Install WebAssembly Rust toolchain
 
 ```
  rustup target install wasm32-wasi
 ```
 
- To get started, lets use a demo that caculates a Fibonacci sequence (i.e. every number after the first two is the sum of the two preceding ones).
+## Rust code
 
-
-## Rust Code
-
-First create a new project using the command below:
+The code below caculates a Fibonacci sequence. Let's create a new project using the command:
 
 ```bash
-cargo new demo
+cargo new fibonacci
 ```
 
-You can use any IDE of your choice and open up this project folder, add this to the `main.rs` file:
+You can use any IDE of your choice and open up this project folder. Replace the `main.rs` file under the `src` folder with:
   
 ```rust
 use std::io;
@@ -61,36 +48,27 @@ fn fib (n: u32) -> u32 {
   
 ```
 
-## Compiling Rust Code
+## Compile Rust
 
-1. Compile using cargo
+Compile using cargo:
 
 ``` bash
 cargo build
 cargo run
 ```
-![Rust Screenshot1](/img/tutorial/rustRunSreenshot.png?raw=true)
 
-2. Compile to wasm
-
-```bash
-cargo build --target=wasm32-wasi
-```
-![Rust Screenshot2](/img/tutorial/rustCompileScreenshot.png?raw=true)
-
-
-3. The wasm file created in release folder of wasi32
+## Compile to Wasm
 
 ```bash
-file target/wasm32-wasi/release/demo.wasm
+cargo build --release --target=wasm32-wasi
 ```
 
-4. Wasm runtime
+## Run with Enarx
+
+Run the fibonacci example using Enarx:
 
 ```bash
-
-wasmtime target/wasm32-wasi/release/demo.wasm
+enarx run target/wasm32-wasi/release/fibonacci.wasm
 ```
-![Rust Screenshot3](/img/tutorial/rustWasm.png?raw=true)
 
 	

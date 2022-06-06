@@ -1,23 +1,17 @@
 # WebAssembly With C 
 
-## Environment Setup 
+## Install WASI SDK
 
-To compile this demo, you must install the following:
+Install [WASI SDK](https://github.com/WebAssembly/wasi-sdk/) following the instructions:
 
-### Wasmtime
+https://github.com/WebAssembly/wasi-sdk
 
-You can install it from [Wasmtime.dev](https://www.wasmtime.dev)
+## C code
 
-### Wasi-Sdk
+We will create a simple C application that will return us the fibonacci sequence of an integer input. Create a file named `fibonacci.c`:
 
-Next you will have to download the latest release version of Wasi-Sdk. You can download it from here: [Wasi-Sdk](https://github.com/WebAssembly/wasi-sdk/releases) and download the binary as per your Operating System.
-
-### Steps
-
-First of all, create a new directory. I am naming my Directory as `C-Tutorial `. In this directory, create a new file which will contain your `C Source Code` and then paste the following code:
-
-```C
-#include<stdio.h>
+```c
+#include <stdio.h>
 
 int FibonacciSequence(int num) {
     if(num <= 1) {
@@ -35,20 +29,14 @@ int main(){
 
 ```
 
-After you are done creating your Source Code File,  fire up your Terminal/Bash and follow the following steps:
-
-Navigate to the directory where you downloaded the `wasi-sdk` directory and inside that directory navigate to `~/Downloads/wasi-sdk-{Release_Version}/bin/clang`.  You can replace the `{Release_Version}` with the specified version of `wasi-sdk` that you have downloaded at the time you are following this tutorial. In my case it is `wasi-sdk-14  
-
-The `wasi-sdk` provides a `clang` which is configured to target WASI and we will use that in order to generate our WASM Binary.
+## Compile the C code to Wasm
 
 ```bash
-~/Downloads/wasi-sdk-14.0/bin/clang demo.c -o demo.wasm
+ {path-wasi-sdk}/bin/clang fibonacci.c --sysroot {path-wasi-sdk}/share/wasi-sysroot/ -o fibonacci.wasm
 ```
 
-Now you will have your WASM Binary `demo.wasm ` in your `C-Tutorial` directory and now you can run it on Wasmtime. 
+## Run with Enarx
 
-`wasmtime demo.wasm`
-
-Additionally, you can also run it in the `Enarx Keep` as well:
-
-`enarx run demo.wasm`
+```bash
+enarx run fibonacci.wasm
+```
