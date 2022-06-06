@@ -1,43 +1,18 @@
 # WebAssembly with C++
 
-![C++ WebAssembly](/img/tutorial/C++WASI.png?raw=true)
+## Install WASI SDK
 
-## Environment Setup 
+Install [WASI SDK](https://github.com/WebAssembly/wasi-sdk/) following the instructions:
 
-To compile this demo, you must install the following:
+https://github.com/WebAssembly/wasi-sdk
 
-### C++
+## C++ code
 
-Go to [C and C++ Installation](https://docs.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-170) and follow the instructions.
+We will create a simple C++ application that will return us the fibonacci sequence of an integer input. Create a file named `fibonacci.cpp`:
 
-### Wasmer
-
-[Wasmer](https://docs.wasmer.io/) is an open-source runtime for executing WebAssembly on the Server.
-
-#### Wasienv
-
-[Wasienv](https://github.com/wasienv/wasienv) is a tool to compile different programming languages to WebAssembly, so you can run your programs on the Browser, or in the Server.
-
-### Wasmtime
-
-You will find wasmtime at [wasmtime.dev](https://wasmtime.dev/)
-
-## C++ Code Snippet
-
-We will create a Simple C++ Program that will return us the fibonacci sequence of an Integer Input.
-
-Create a folder "C++-to-WASM":
-
-```bash
-mkdir C++-to-WASM
-cd C++-to-WASM
-```
-
-Create a file named `FibonacciSequence.cpp`:
-
-```C++
+```cpp
 // Simple Program to calculate Fibonacci Sequence of an integer input
-#include<iostream>
+#include <iostream>
 using namespace std;
 int FibonacciSequence(int num) {
     if(num <= 1) {
@@ -54,31 +29,14 @@ int main(){
 }
 ```
 
-## Compiling the C++ Code
-
-1. Compiling Using `g++`
+## Compile the C++ code to Wasm
 
 ```bash
-g++ FibonacciSequence.cpp
+ {path-wasi-sdk}/bin/clang++ fibonacci.cpp --sysroot {path-wasi-sdk}/share/wasi-sysroot/ -o fibonacci.wasm
 ```
-![C++ Screenshot1](/img/tutorial/C++ExecutionScreenshot.png?raw=true)
 
-2. Compile to WASM Binary using the following Command:
-
-Since the Code has been written in C++, we need to figure out a way to generate a WebAssembly Binary. That's why we will be using `wasienv` in order to generate a `.wasm` binary from this `cpp` file.
-
-When you have your `cpp` file created, you can execute `wasic++`
+## Run with Enarx
 
 ```bash
- wasic++ FibonacciSequence.cpp -o FibonacciBinary.wasm
+enarx run fibonacci.wasm
 ```
-
-Note that while executing this command, it might generate some warnings but you can ignore them.
-
-3. Now, you will have a new `FibonacciBinary.wasm` file ready in your Directory
-
-4. Executing it using WASM Runtime
-```bash
-wasmtime FibonacciBinary.wasm
-```
-![C++ Screenshot2](/img/tutorial/C++Wasm.png?raw=true)

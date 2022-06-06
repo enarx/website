@@ -1,27 +1,14 @@
 # WebAssembly with Zig
 
-![Zig Webassembly](/img/tutorial/zigWasi.png?raw=true)
+## Install Zig
 
-## Environment setup
+To install Zig, follow the instructions here:
 
-To compile this demo, you must install the following:
-
-### Zig
-
-Go to [ziglang.org](https://ziglang.org/download/) and follow the instructions.
-
-
-### Wasmtime
-
-You will find wasmtime at [wasmtime.dev](https://wasmtime.dev/)
+https://ziglang.org/download/
 
 ## Zig Code
 
-we would create a simple Zig program that calculates caculates the fibonacci sequence of an integer input.
-
-create a folder with a name of your choice, i would be using "Zig-to-WASI" as the name of my folder.
-
-create a file `main.zig`, add following code into your main.zig file and save the file.
+Create a simple Zig program that calculates the fibonacci sequence of an integer input:
 
 ```zig
 const std = @import("std");
@@ -39,31 +26,19 @@ pub fn main() !void {
     try stdout.print("is: {d} \n ", .{fibonacci(x)}  );
 }
 ```
-## Compiling Go code
-
-1. Compile using `zig` 
+## Compile the Zig code
 
 ```bash
 zig run main.zig
 ```
-![Zig Screenshot1](/img/tutorial/zigRunScreenshot.png?raw=true)
 
-
-
-2. compile to WASM using the following command:
+## Compile Zig to Wasm
 
 ```
 zig build-exe main.zig -target wasm32-wasi
 ```
 
-3. The wasm file created in same folder
-
+## Run with Enarx
 ```bash
-file main.wasm
+enarx run main.wasm
 ```
-
-4. wasm runtime
-```bash
-wasmtime main.wasm
-```
-![Zig Screenshot2](/img/tutorial/zigWasmScreenshot.png?raw=true)
