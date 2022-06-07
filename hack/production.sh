@@ -17,6 +17,7 @@ git clone  --branch "${release}" https://github.com/${ORG}/enarx.git versioned
 
 (test -d versioned/docs/ && rsync -avp --ignore-times versioned/docs/* versioned_staging) || echo versioned docs do not exist, skipping step
 (test -d versioned_staging && rsync -avp --ignore-times versioned_staging/* docs/) || echo versioned docs do not exist, skipping step
+(test -d override && rsync -avp --ignore-times override/* docs/) || echo override docs do not exist, skipping step
 
 yarn install
 yarn lint
