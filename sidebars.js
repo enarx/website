@@ -26,7 +26,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Installation Guide',
-      items: ['Install',],
+      items: ['Quickstart','Install'],
     },
     {
       type: 'category',
