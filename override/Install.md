@@ -1,4 +1,6 @@
-# Installation Guide
+# Install Enarx from Source
+
+This installation guide is for installing Enarx from source. For pre-compiled binaries, please reference the quickstart document available [here](Quickstart).
 
 ## Introduction
 
@@ -104,10 +106,10 @@ kvm 	      10   1 kvm_amd
 
 ## Initial Setup
 Please choose one of the following:
-* [Linux x86_64](#Linux-x86_64-Install-Dependencies)
-* [64-bit Arm: (Raspberry Pi or Apple M1) and Apple x86_64](#64-bit-Arm-build-dependencies-Raspberry-Pi-or-Apple-M1-and-Apple-x86_64)
+* [Linux Install Dependencies](#linux-install-dependencies)
+* [MacOS Install Dependencies](#macos-install-dependencies)
 
-### Linux x86_64 Install Dependencies
+### Linux Install Dependencies
 
 Please find instructions for your Linux distribution:
 
@@ -115,14 +117,14 @@ Please find instructions for your Linux distribution:
 
 ```sh:ID=fedora
 $ sudo dnf update -y
-$ sudo dnf install -y git curl gcc pkg-config openssl-devel musl-gcc
+$ sudo dnf install -y git curl gcc musl-gcc
 ```
 
 #### CentOS 8 / Stream
 ```sh:CPE_NAME="cpe:/o:centos:centos:8"
 $ sudo dnf install -y dnf-plugins-core
 $ sudo dnf copr -y enable ngompa/musl-libc
-$ sudo dnf install -y git curl gcc-toolset-11 openssl-devel musl-gcc
+$ sudo dnf install -y git curl gcc-toolset-11 musl-gcc
 $ source "/opt/rh/gcc-toolset-11/enable"
 ```
 :::note
@@ -143,9 +145,9 @@ $ sudo yum install http://mirror.centos.org/centos/7/extras/x86_64/Packages/cent
 ```
 and then:
 ```sh:CPE_NAME="cpe:/o:centos:centos:7"
-$ sudo yum install -y yum-plugin-copr    
+$ sudo yum install -y yum-plugin-copr
 $ sudo yum copr -y enable ngompa/musl-libc
-$ sudo yum install -y git curl devtoolset-11 openssl-devel musl-gcc
+$ sudo yum install -y git curl devtoolset-11 musl-gcc
 $ source "/opt/rh/devtoolset-11/enable"
 ```
 
@@ -160,7 +162,7 @@ to source that file prior to building `enarx`.
 #### Debian / Ubuntu
 ```sh:ID=debian ID=ubuntu
 $ sudo apt update
-$ sudo apt install -y git curl gcc pkg-config libssl-dev musl-tools python3-minimal
+$ sudo apt install -y git curl gcc musl-tools python3-minimal
 ```
 
 :::tip
@@ -172,14 +174,27 @@ Failure to do so might result in weird failures at runtime.
 
 :::
 
-### 64-bit Arm build dependencies: (Raspberry Pi or Apple M1) and Apple x86_64
+### MacOS Install Dependencies
 
-The architectures support development only, using the "nil" backend, so you only need to install the Rust toolchain.
+#### Install Xcode
+Compiling enarx on MacOS requires Xcode to be installed:
+```console
+xcode-select --install
+sudo xcodebuild -license
+```
 
 ### Install Rust
+
+For installing Rust on Linux and MacOS please run the following:
 ```sh
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain nightly -y
 $ source $HOME/.cargo/env
+```
+
+For installing Rust on Windows X86_64 please open a command prompt and run the following commands:
+```console
+C:\Users\User> curl.exe --output rustup-init.exe --url https://winget.rustup.rs/x86_64
+C:\Users\User> rustup_init.exe --default-toolchain nightly -y
 ```
 
 ## Installing Enarx
@@ -190,8 +205,6 @@ You can install Enarx from GitHub, crates.io, or Nix.
 ```sh:git;
 $ git clone https://github.com/enarx/enarx
 $ cd enarx/
-$ cargo build
-
 $ cargo install --bin enarx --path ./
 ```
 ### Install from crates.io
@@ -202,9 +215,16 @@ Rust version nightly-2022-05-03 is required when installing Enarx 0.5.1 from cra
 
 :::
 
+For installing Enarx from crates.io on X86_64 Linux please run:
 ```sh:crates;
 $ rustup toolchain install nightly-2022-05-03 -t x86_64-unknown-linux-musl,x86_64-unknown-linux-gnu,x86_64-unknown-none
 $ CARGO_TARGET_X86_64_UNKNOWN_NONE_RUSTFLAGS="-C linker=gcc" cargo +nightly-2022-05-03 -Z bindeps install --bin enarx --version 0.5.1 -- enarx
+```
+
+For installing Enarx from crates.io on non-x86_64 Linux please run:
+```console
+$ rustup toolchain install nightly-2022-05-03
+$ cargo +nightly-2022-05-03 -Z bindeps install --bin enarx --version 0.5.1 -- enarx
 ```
 
 ### Install from Nix
@@ -278,7 +298,7 @@ $ ENARX_BACKEND=sgx enarx run target/wasm32-wasi/release/hello-world.wasm
 `enarx` will look for backends in the following order, and use the first which it finds:
 1. SGX or SEV-SNP
 2. KVM
-3. "nil"
+3. "nil" (a debug/developer backend without TEEs, isolation or any additional security guarentees)
 
 The status of whether or not enarx was able to find the driver can be checked with the command `enarx info`. If the output shows any of the backends with a green "tick" or "checkmark", you are ready to use enarx with that backend.
 
