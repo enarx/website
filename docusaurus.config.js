@@ -78,7 +78,7 @@ const config = {
               },
               {
                 label: 'Installation Guide',
-                to: '/docs/Install',
+                to: '/docs/Quickstart',
               },
               {
                 label: 'WebAssembly Guide',
@@ -197,7 +197,7 @@ const config = {
               },
               {
                 label: 'Installation Guide',
-                to: '/docs/Install',
+                to: '/docs/Quickstart',
               },
               {
                 label: 'WebAssembly Guide',
