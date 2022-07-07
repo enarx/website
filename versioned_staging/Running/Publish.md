@@ -1,4 +1,4 @@
-# Publishing and deploying applications via Enarx
+# Publish & Deploy Apps
 
 Enarx is more than just a tool for running WebAssembly. It also allows you to publish a WebAssembly package to a remote package host, as well as securely run a published package in a local Enarx keep. The following sections will demonstrate this process, along with other useful commands for interacting with a package host.
 
@@ -32,7 +32,7 @@ In the above example, `your_username` is the username that you registered previo
 
 ## Publishing a WebAssembly package
 
-Before you can publish, you will first need to [compile your application to WebAssembly](WebAssembly/Introduction). At the end of this process you will have a file with the `.wasm` file extension. Rename this file to `main.wasm` and place it in the same directory as a properly configured [`Enarx.toml`](Enarx_toml).
+Before you can publish, you will first need to [compile your application to WebAssembly](../WebAssembly/Introduction). At the end of this process you will have a file with the `.wasm` file extension. Rename this file to `main.wasm` and place it in the same directory as a properly configured [`Enarx.toml`](Enarx_toml).
 
 Once you have a directory containing a `main.wasm` and an `Enarx.toml`, we can *publish* this directory to the package host with the `enarx package publish` command, as shown here:
 
