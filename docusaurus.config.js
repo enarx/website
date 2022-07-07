@@ -81,6 +81,10 @@ const config = {
                 to: '/docs/Quickstart',
               },
               {
+                label: 'Running Enarx',
+                to: '/docs/Running/Publish',
+              },
+              {
                 label: 'WebAssembly Guide',
                 to: '/docs/WebAssembly/Introduction',
               },
@@ -198,6 +202,10 @@ const config = {
               {
                 label: 'Installation Guide',
                 to: '/docs/QuickStart',
+              },
+              {
+                label: 'Running Enarx',
+                to: '/docs/Running/Publish',
               },
               {
                 label: 'WebAssembly Guide',
