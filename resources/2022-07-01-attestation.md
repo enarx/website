@@ -1,6 +1,6 @@
 ---
 slug: 2022-07-01-attestation
-title: "Fireside Chat: Trust in Computer Systems and the Cloud"  
+title: "The Future of Attestation in a Confidential World"  
 author: "Nathaniel McCallum"
 tags: [Webinar, Profian's Blog]
 ---
