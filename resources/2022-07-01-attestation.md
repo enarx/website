@@ -9,7 +9,7 @@ tags: [Webinar, Profian's Blog]
 **Author**: Nathaniel McCallum  
 **Date**: June 21, 2022   
   
-<iframe src="https://www.youtube.com/watch?v=2TsyzSY5bPs" height="480" width="640" allowFullScreen></iframe>
+<iframe src="https://www.youtube.com/embed/2TsyzSY5bPs" height="480" width="640" allowFullScreen></iframe>
 
 
 **Source**: Confidential Computing Consortium

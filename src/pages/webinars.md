@@ -30,5 +30,5 @@ https://enarx.dev/resources/tags/webinar
 **Date**: June 21, 2022   
 **Link**: https://blog.profian.com/the-future-of-attestation-in-a-confidential-world/  
 
-<iframe src="https://www.youtube.com/watch?v=2TsyzSY5bPs" height="480" width="640" allowFullScreen></iframe>
+<iframe src="https://www.youtube.com/embed/2TsyzSY5bPs" height="480" width="640" allowFullScreen></iframe>
 <hr />
