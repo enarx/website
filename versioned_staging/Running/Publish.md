@@ -12,7 +12,7 @@ First, register a new user with the package host using the `enarx user register`
 enarx user register your_username
 ```
 
-Upon entering this command, Enarx will print two things to your terminal: a web page URL, and a unique one-time code. Open the URL, then copy and paste the one-time code into the form field on the web page. Once you have entered the code, it will ask to connect to your GitHub account. Follow the instructions shown on the page, and when you have finished connecting your GitHub account you may close the page and return to your terminal. Note that it may take a few moments before your terminal finishes authenticating with GitHub. Once it does, it will notify you that your credentials have been saved locally. The command will then exit, indicating that your user account has been successfully registered.
+Upon entering this command, Enarx will print two things to your terminal: a web page URL, and a unique one-time code. Open the URL (on any device), then enter the one-time code into the form field on the web page. Once you have entered the code, it will ask to connect to your GitHub account. Follow the instructions shown on the page, and when you have finished connecting your GitHub account you may close the page and return to your terminal. Note that it may take a few moments before your terminal finishes authenticating with GitHub. Once it does, it will notify you that your credentials have been saved locally. The command will then exit, indicating that your user account has been successfully registered.
 
 Note that in the future when you need to log in again (for example, if you are connecting from a different computer), you can do so with the `enarx user login` command, as shown here:
 
@@ -50,7 +50,7 @@ Once a package has been published, it can be run directly with the `enarx deploy
 enarx deploy some_username/some_reponame:0.1.0
 ```
 
-Unlike `enarx repo register` and `enarx package publish`, this command does not require authentication and can be used with any public package.
+Unlike `enarx repo register` and `enarx package publish`, this command does not require authentication and can deploy any public package.
 
 ## Retrieving information about a user, repository, or package
 
