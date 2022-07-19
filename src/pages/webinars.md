@@ -19,7 +19,16 @@ https://enarx.dev/resources/tags/webinar
 ### Fireside Chat: Trust in Computer Systems and the Cloud
 **Author**: Mike Bursell and Stephen Walli  
 **Date**: April 19, 2022  
-**Link**: https://confidentialcomputing.io/webinar-fireside-chat-trust-in-computer-systems-and-the-cloud/  
+**Link**: https://blog.profian.com/trust-in-computer-systems-and-the-cloud/    
   
 <iframe src="https://www.youtube.com/embed/8X4Ubv4fxwk" height="480" width="640" allowFullScreen></iframe>
+<hr />
+
+
+### The Future of Attestation in a Confidential World  
+**Author**: Nathaniel McCallum  
+**Date**: June 21, 2022   
+**Link**: https://blog.profian.com/the-future-of-attestation-in-a-confidential-world/  
+
+<iframe src="https://www.youtube.com/watch?v=2TsyzSY5bPs" height="480" width="640" allowFullScreen></iframe>
 <hr />
