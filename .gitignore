@@ -19,6 +19,7 @@ coverage
 
 Install.md
 Quickstart.mdx
-docs/Running/Publish.md
-docs/Running/Enarx_toml.md
-versioned_staging/Running/Enarx_toml.md
+Publish.md
+Enarx_toml.md
+Credentials.md
+
