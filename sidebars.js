@@ -31,7 +31,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Running Enarx',
-      items: ['Running/Publish', 'Running/Enarx_toml'],
+      items: ['Running/Publish', 'Running/Enarx_toml', 'Credentials'],
     },
     {
       type: 'category',
