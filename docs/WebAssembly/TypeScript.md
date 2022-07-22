@@ -28,6 +28,9 @@ function fibonacci(num: number) {
     console.log("Fibonacci Term is:", b);
 }
 ```
+:::tip
+Access the [TypeScript codex repository](https://github.com/enarx/codex/tree/main/TypeScript) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/TypeScript/fibonacci).
+:::
 
 ## Transpiling TypeScript to JavaScript
 

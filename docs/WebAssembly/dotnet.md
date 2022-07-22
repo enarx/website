@@ -49,6 +49,10 @@ namespace MyFirstWasiApp
     }
 }
 ```
+:::tip
+Access the [C# codex repository](https://github.com/enarx/codex/tree/main/C%23) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/C%23/fibonacci).
+:::
+
 :::note
 Currently `Experimental WASI SDK` does not allow to take user input through the console using `ReadLine()`.
 :::

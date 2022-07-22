@@ -48,8 +48,11 @@ func main(){
     fmt.Println("Fibonacci of", n , "is", FibonacciRecursion(n));
 }
 
-
 ```
+:::tip
+Access the [Go codex repository](https://github.com/enarx/codex/tree/main/Go) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/Go/fibonacci).
+:::
+
 ## Compile the Go code
 
 ```bash

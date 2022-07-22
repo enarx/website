@@ -28,6 +28,9 @@ return a
 
 print(fibonacci(n:7))
 ```
+:::tip
+Access the [Swift codex repository](https://github.com/enarx/codex/tree/main/Swift) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/Swift/fibonacci).
+:::
 
 ## Compile Swift to Wasm
 

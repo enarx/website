@@ -47,6 +47,9 @@ fn fib (n: u32) -> u32 {
 }
   
 ```
+:::tip
+Access the [Rust codex repository](https://github.com/enarx/codex/tree/main/Rust) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/Rust/fibonacci).
+:::
 
 ## Compile Rust
 

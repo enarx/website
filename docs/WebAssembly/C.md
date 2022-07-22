@@ -28,6 +28,9 @@ int main(){
 }
 
 ```
+:::tip
+Access the [C codex repository](https://github.com/enarx/codex/tree/main/C) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/C/fibonacci).
+:::
 
 ## Compile the C code to Wasm
 

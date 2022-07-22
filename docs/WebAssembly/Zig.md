@@ -26,6 +26,10 @@ pub fn main() !void {
     try stdout.print("is: {d} \n ", .{fibonacci(x)}  );
 }
 ```
+:::tip
+Access the [Zig codex repository](https://github.com/enarx/codex/tree/main/Zig) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/Zig/fibonacci).
+:::
+
 ## Compile the Zig code
 
 ```bash
