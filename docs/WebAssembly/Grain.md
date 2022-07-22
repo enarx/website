@@ -21,6 +21,9 @@ fibonacci(n - 1) + fibonacci(n - 2)
 
 print(fibonacci(7))
 ```
+:::tip
+Access the [Grain codex repository](https://github.com/enarx/codex/tree/main/Grain) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/Grain/fibonacci).
+:::
 
 :::note
 The function is recursive with the keyword `rec` in Grain.

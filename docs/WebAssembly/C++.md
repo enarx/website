@@ -28,6 +28,9 @@ int main(){
     cout << "Fibonacci Sequence term at " << n << "  " << "is " << FibonacciSequence(n) << endl;
 }
 ```
+:::tip
+Access the [C++ codex repository](https://github.com/enarx/codex/tree/main/C%2B%2B) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/C%2B%2B/fibonacci).
+:::
 
 ## Compile the C++ code to Wasm
 

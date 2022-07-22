@@ -34,6 +34,9 @@ var Shopify = {
   main: fibonacci
 };
 ```
+:::tip
+Access the [JavaScript codex repository](https://github.com/enarx/codex/tree/main/JavaScript) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/JavaScript/fibonacci).
+:::
 
 :::note
 The Javy toolchain expects `Shopify.main` to point to our main function, in this case, `fibonacci`.

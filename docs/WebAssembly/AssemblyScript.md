@@ -35,6 +35,9 @@ else{
 let a: i32 = fibo(7);
 Console.log(a.toString());
 ```
+:::tip
+Access the [AssemblyScript codex repository](https://github.com/enarx/codex/tree/main/AssemblyScript) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/AssemblyScript/fibonacci).
+:::
 
 We need to import `wasi` to add some nice defaults for compiling to `WASI` and we need to import `Console` to write to `stdout`.
 

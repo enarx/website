@@ -21,6 +21,9 @@ def fibonacci( n )
 end
 puts fibonacci( 5 )
 ```
+:::tip
+Access the [Ruby codex repository](https://github.com/enarx/codex/tree/main/Ruby) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/Ruby/fibonacci).
+:::
 
 Save it to: `head-wasm32-unknown-wasi-full/src/fibonacci.rb`
 
