@@ -30,19 +30,14 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Running Enarx',
-      items: ['Running/Publish', 'Running/Enarx_toml', 'Credentials'],
+      label: 'Running Enarx Guide',
+      items: ['Running/Publish', 'Running/Enarx_toml', 'Networking', 'Credentials'],
     },
     {
       type: 'category',
       label: 'WebAssembly Guide',
       items: ['WebAssembly/Introduction', 'WebAssembly/Rust', 'WebAssembly/C++', 'WebAssembly/C', 'WebAssembly/Golang', 'WebAssembly/Ruby', 'WebAssembly/dotnet', 'WebAssembly/Python', 'WebAssembly/JavaScript', 'WebAssembly/TypeScript', 'WebAssembly/AssemblyScript', 'WebAssembly/Swift', 'WebAssembly/Grain', 'WebAssembly/Zig'],
     },
-    {
-      type: 'category',
-      label: 'Networking Guide',
-      items: ['Networking/Introduction', 'Networking/TCP-Server', 'Networking/ROT13'],
-    },   
     {
       type: 'category',
       label: 'Contributing Guide',
