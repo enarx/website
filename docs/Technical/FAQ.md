@@ -49,7 +49,7 @@ Secondly, it is likely to be impossible to mitigate all side-channel attacks, bu
 ## How can I contribute?
 You can find information on how to get started over at [How to contribute](/docs/Contributing/Introduction).
 
-## Does Red Hat own Enarx?
+## Does Profian own Enarx?
 No single company or organisation "owns" Enarx.  It's open source software.   Copyright on code is owned by whoever contributes it to the project.  For more information, try [this definition](https://opensource.com/resources/what-open-source) from [Opensource.com](https://opensource.com) or our [license page](https://github.com/enarx/enarx/blob/main/LICENSE) (spoiler: it's Apache 2.0).
 
 ## Who writes this stuff?

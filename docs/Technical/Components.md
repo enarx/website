@@ -13,7 +13,7 @@ The following components are relevant or related to Enarx:
 ## Attestation
 An application which is going to run in an Enarx Keep needs to attest two things:
 1. The hardware TEE (Trusted Execution Environment) providing Keeps.
-1. A measurement of the Enarx runtime.  This means that Red Hat may need to launch a service to abstract attestation. The way that this works is that the client requests attestation from Enarx.  Enarx supplies a blob. The client forwards this to Red Hat. Red Hat will then complete attestation of the h/w environment and translate the measurements of Enarx into a something which allows you to identify the specific version of Enarx.
+1. A measurement of the Enarx runtime.  This means that Profian may need to launch a service to abstract attestation. The way that this works is that the client requests attestation from Enarx.  Enarx supplies a blob. The client forwards this to Profian. Profian will then complete attestation of the h/w environment and translate the measurements of Enarx into a something which allows you to identify the specific version of Enarx.
 
 
 From the client’s point of view, the attestation steps of Enarx end up with the following two cryptographically validated assertions:
