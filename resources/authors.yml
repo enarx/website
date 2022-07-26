@@ -15,7 +15,7 @@ nathaniel:
   image_url: https://github.com/npmccallum.png
 
 harald:
-  name: Harlad Hoyer
+  name: Harald Hoyer
   title: Senior Software Engineer
   url: https://github.com/haraldh
   image_url: https://github.com/haraldh.png
@@ -31,6 +31,12 @@ nick:
   title: Community Manager
   url: https://github.com/nickvidal
   image_url: https://github.com/nickvidal.png
+
+richard:
+  name: Richard Zak
+  title: Senior Software Engineer
+  url: https://github.com/rjzak
+  image_url: https://github.com/rjzak.png
 
 roman:
   name: Roman Volosatovs
