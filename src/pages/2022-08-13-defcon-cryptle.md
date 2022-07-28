@@ -1,5 +1,5 @@
 ---
-slug: 2022-08-12-defcon
+slug: 2022-08-13-defcon-cryptle
 title: "Owned or pwned? No peakin' or tweakin'!"  
 authors: [richard, nick]
 tags: [Event]
