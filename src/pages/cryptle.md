@@ -22,19 +22,13 @@ The **Hack Challenge** provides a more elaborate way to engage with the game: pl
 
 ## Participation
 
-The mechanism chosen to “hack” Enarx and derive the secret words is up to the implementer, but the application must be available as open source (under an [OSI-approved license](https://opensource.org/licenses/)) in a public repository in [GitHub](https://github.com/) or [GitLab](https://gitlab.com/users/sign_in).
+The mechanism chosen to “hack” Enarx and derive the secret words is up to the implementer, but the application must be available as open source (under an [OSI-approved license](https://opensource.org/licenses/)) either in [GitHub](https://github.com/) or [GitLab](https://gitlab.com/users/sign_in), initially shared privately with the Enarx team following [responsible vulnerability disclosure](https://github.com/enarx/enarx/blob/main/SECURITY.md).
 
 It may be written in any programming language, but should not be intentionally obfuscated.
 
 Documentation should be provided to show how the application is able to “guess” or derive the secret words.
 
-Once you have published your application, please open an issue at:
-
-https://github.com/enarx/cryptle 
-
-Your application code will be reviewed within 72 hours.
-
-After it has been reviewed, it will be executed with root privileges on the same server where Enarx and Cryptle are running.
+After your code and documentation have been reviewed, we will execute your application with root privileges on the same server where Enarx and Cryptle are running.
 
 The application will be run for a total of 15 minutes.
 
@@ -46,7 +40,7 @@ The application will be run as an ELF binary.
 
 No physical access to the host will be allowed or provided.
 
-The Hack Challenge judges will evaluate the results and contact the player within 72h after the application was executed.
+The Hack Challenge judges will evaluate the results and contact the player.
 
 Observation: anyone who does not follow the rules from this challenge or does not follow [responsible vulnerability disclosure](https://github.com/enarx/enarx/blob/main/SECURITY.md) will be automatically disqualified.
 
