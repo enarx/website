@@ -7,7 +7,7 @@ To install Docker on your local system, refer the [official guide](https://docs.
 First, we need to pull the docker image and run it in an interactive mode; we would be accessing the container from its bash. To do the same, run the following command.
 
 ```docker
-docker run --rm -it ghcr.io/swiftwasm/swift:latest /bin/bash
+docker run -v `pwd`:/swift --rm -it ghcr.io/swiftwasm/swift:latest /bin/bash
 ```
 
 ## Swift code
@@ -37,7 +37,7 @@ Access the [Swift codex repository](https://github.com/enarx/codex/tree/main/Swi
 To compile your Swift code to Wasm, simply run:
 
 ```
-swiftc -target wasm32-unknown-wasi fibonacci.swift -o fibonacci.wasm
+swiftc -target wasm32-unknown-wasi /swift/fibonacci.swift -o /swift/fibonacci.wasm
 ```
 
 ## Run with Enarx
