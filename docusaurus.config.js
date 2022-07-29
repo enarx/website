@@ -93,8 +93,8 @@ const config = {
                 to: '/docs/Contributing/Introduction',
               },
               {
-                label: 'Fellowship Guide',
-                to: '/docs/Fellowship/Introduction',
+                label: 'Enarx Repo Guide',
+                to: '/docs/Repo/Introduction',
               },
               {
                 label: 'Technical Overview',
@@ -113,7 +113,19 @@ const config = {
                 to: '/resources',                
               },
               {
-                label: 'Blog',
+                label: 'All Tags',
+                to: '/resources/tags',                
+              },
+              {
+                label: 'Releases',
+                to: '/resources/tags/release',
+              },
+              {
+                label: 'White Papers',
+                to: '/resources/tags/white-paper',                
+              },
+              {
+                label: 'Blog Posts',
                 to: '/resources/tags/enarxs-blog',                
               },
               {
@@ -121,20 +133,8 @@ const config = {
                 to: '/resources/tags/article',                
               },
               {
-                label: 'Releases',
-                to: '/resources/tags/release',
-              },
-              {
                 label: 'Events',
                 to: '/resources/tags/event',                
-              },
-              {
-                label: 'Webinars',
-                to: '/resources/tags/webinar',                
-              },
-              {
-                label: 'Meetings',
-                to: '/resources/tags/meeting',                
               },
             ]
           },
@@ -160,16 +160,43 @@ const config = {
                 href: 'https://twitter.com/enarxproject',
               },
               {
-                label: 'Upcoming Events',
+                label: 'Events',
                 to: '/events',
               },
               {
-                label: 'Upcoming Webinars',
+                label: 'Webinars',
                 to: '/webinars',
               },
               {
-                label: 'Upcoming Meetings',
+                label: 'Meetings',
                 href: '/meetings',
+              },
+            ],
+          },
+          {
+            type: 'dropdown',
+            label: 'Initiatives',
+            position: 'left',
+            items: [
+              {
+                label: 'Try Enarx',
+                href: 'https://try.enarx.dev',
+              },
+              {
+                label: 'Fellowship Program',
+                href: '/docs/Fellowship/Introduction',
+              },
+              {
+                label: 'Cryptle Hack Challenge',
+                href: '/cryptle',
+              },
+              {
+                label: 'Wasm Builders',
+                href: 'https://wasm.builders',
+              },
+              {
+                label: 'Wasm Codex',
+                to: 'https://github.com/enarx/codex/',
               },
             ],
           },
@@ -212,8 +239,8 @@ const config = {
                 to: '/docs/Contributing/Introduction',
               },
               {
-                label: 'Fellowship Guide',
-                to: '/docs/Fellowship/Introduction',
+                label: 'Enarx Repo Guide',
+                to: '/docs/Repo/Introduction',
               },
               {
                 label: 'Technical Overview',
@@ -229,7 +256,19 @@ const config = {
                 to: '/resources',                
               },
               {
-                label: 'Blog',
+                label: 'All Tags',
+                to: '/resources/tags',                
+              },
+              {
+                label: 'Releases',
+                to: '/resources/tags/release',
+              },
+              {
+                label: 'White Papers',
+                to: '/resources/tags/white-paper',                
+              },
+              {
+                label: 'Blog Posts',
                 to: '/resources/tags/enarxs-blog',                
               },
               {
@@ -237,20 +276,8 @@ const config = {
                 to: '/resources/tags/article',                
               },
               {
-                label: 'Releases',
-                to: '/resources/tags/release',
-              },
-              {
                 label: 'Events',
                 to: '/resources/tags/event',                
-              },
-              {
-                label: 'Webinars',
-                to: '/resources/tags/webinar',                
-              },
-              {
-                label: 'Meetings',
-                to: '/resources/tags/meeting',                
               },
             ]
           },
@@ -274,16 +301,41 @@ const config = {
                 href: 'https://twitter.com/enarxproject',
               },
               {
-                label: 'Upcoming Events',
+                label: 'Events',
                 to: '/events',
               },
               {
-                label: 'Upcoming Webinars',
+                label: 'Webinars',
                 to: '/webinars',
               },
               {
-                label: 'Upcoming Meetings',
+                label: 'Meetings',
                 href: '/meetings',
+              },
+            ],
+          },
+          {
+            title: 'Initiatives',
+            items: [
+              {
+                label: 'Try Enarx',
+                href: 'https://try.enarx.dev',
+              },
+              {
+                label: 'Fellowship Program',
+                href: '/docs/Fellowship/Introduction',
+              },
+              {
+                label: 'Cryptle Hack Challenge',
+                href: '/cryptle',
+              },
+              {
+                label: 'Wasm Builders',
+                href: 'https://wasm.builders',
+              },
+              {
+                label: 'Wasm Codex',
+                to: 'https://github.com/enarx/codex/',
               },
             ],
           },
