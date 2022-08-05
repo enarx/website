@@ -1,6 +1,6 @@
 # TEE
 
-Trusted Execution Environments (TEEs) allow organizations to run applications within a set of memory pages that are encrypted with a secret key by the host CPU in such a way that these pages are not accessible to the operating system or any other software, even running at the highest privilege level.
+Trusted Execution Environments (TEEs) allow organizations to run applications within a set of memory pages that are encrypted with a secret key. These encrypted pages are decrypted on the fly by the CPU(s). Code running at higher privilege levels might be able to read such pages but will not be able to access the content in plaintext (thanks to the encryption).
 
 There are currently two leading models of TEEs:
 * Process-based: current implementations include Intel’s SGX (Software Guard eXtensions).
