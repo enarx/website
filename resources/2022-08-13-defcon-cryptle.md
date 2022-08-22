@@ -1,6 +1,6 @@
 ---
 slug: 2022-08-13-defcon-cryptle
-title: "Owned or pwned? No peakin' or tweakin'!"  
+title: "Cryptle: a secure multi-party Wordle clone with Enarx"  
 authors: [richard, nick]
 tags: [Event]
 ---
