@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Enarx',
-  tagline: 'WebAssembly + Confidential Computing',
+  tagline: 'Confidential Computing with WebAssembly',
   url: 'https://enarx.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
