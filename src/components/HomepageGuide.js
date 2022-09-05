@@ -37,17 +37,6 @@ const GuideList = [
     ),
   },
   {
-    title: 'Meetings',
-    Svg: require('../../static/img/meeting.svg').default,
-    link: '/meetings',
-    description: (
-      <>
-        You are welcome to join the Enarx Daily meetings. These meetings are open to the public. If
-        you are a newcomer, feel free to join and introduce yourself.
-      </>
-    ),
-  },
-  {
     title: 'Events',
     Svg: require('../../static/img/conference.svg').default,
     link: '/events',
@@ -55,6 +44,17 @@ const GuideList = [
       <>
         The Enarx team is present at the top conferences worldwide, including Linux Security Summit,
         Open Source Summit, DevConf, and RSA Conference.
+      </>
+    ),
+  },
+  {
+    title: 'Meetings',
+    Svg: require('../../static/img/meeting.svg').default,
+    link: '/meetings',
+    description: (
+      <>
+        You are welcome to join the Enarx Daily meetings. These meetings are open to the public. If
+        you are a newcomer, feel free to join and introduce yourself.
       </>
     ),
   },
