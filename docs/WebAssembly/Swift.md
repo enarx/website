@@ -15,18 +15,39 @@ docker run -v `pwd`:/swift --rm -it ghcr.io/swiftwasm/swift:latest /bin/bash
 The fibonacci code in Swift is as follows :
 
 ```swift
-func fibonacci(n: Int) -> Int {
-var a = 0
-var b = 1
-for _ in 0..<n {
-let temp = a
-a = b
-b = temp + b
-}
-return a
+func fib(n: UInt) -> UInt {
+	if n <= 1 {
+		return n
+	}
+
+	return fib(n: n-1) + fib(n: n-2)
 }
 
-print(fibonacci(n:7))
+print("Swift - Fibonacci sequence example\n")
+
+let arguments = CommandLine.arguments
+
+var n:UInt
+if (arguments.count > 1) {
+	for i in 1...arguments.count-1 {
+		if let n = UInt(arguments[i]) {
+			print("Fibonacci sequence number at index \(n) is \(fib(n: n))\n")
+		} else {
+			print("Failed to parse argument into a number: \(arguments[i])\n")
+		}
+	}
+} else {
+	print("Enter a non-negative number:\n")
+	if let line = readLine() {
+		if let n = UInt(line) {
+			print("Fibonacci sequence number at index \(n) is \(fib(n: n))\n")
+		} else {
+			print("Could not convert \(line) to integer.\n")	
+		}
+	} else {
+		print("Could not read user input.\n")	
+	}
+}
 ```
 :::tip
 Access the [Swift codex repository](https://github.com/enarx/codex/tree/main/Swift) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/Swift/fibonacci).

@@ -28,24 +28,52 @@ go mod init fibonacci
 Create a file `main.go`, and add the following:
 
 ```go
-// Simple Program to calculate fibonacci of input
-
 package main
 
-import "fmt"
-func FibonacciRecursion(n int) int {
-    if n <= 1 {
-        return n
-    }
-    return FibonacciRecursion(n-1) + FibonacciRecursion(n-2)
+import (
+	"bufio"
+	"flag"
+	"fmt"
+	"log"
+	"os"
+	"strconv"
+)
+
+func init() {
+	log.SetFlags(0)
 }
 
-func main(){
-    fmt.Print("Enter number : ")
-    var n int
-    fmt.Scanln(&n)
-    
-    fmt.Println("Fibonacci of", n , "is", FibonacciRecursion(n));
+func fib(n uint64) uint64 {
+	if n <= 1 {
+		return n
+	}
+	return fib(n-1) + fib(n-2)
+}
+
+func main() {
+	fmt.Println("Go - Fibonacci sequence example")
+
+	flag.Parse()
+
+	args := flag.Args()
+	if len(args) == 0 {
+		fmt.Println("Enter a non-negative number:")
+		sc := bufio.NewScanner(os.Stdin)
+		sc.Scan()
+		b, err := sc.Bytes(), sc.Err()
+		if err != nil {
+			log.Fatalf("Failed to read stdin: %s", err)
+		}
+		args = []string{string(b)}
+	}
+
+	for _, arg := range args {
+		n, err := strconv.ParseUint(arg, 10, 64)
+		if err != nil {
+			log.Fatalf("Failed to parse number: %s", err)
+		}
+		fmt.Printf("Fibonacci sequence number at index %d is %d\n", n, fib(n))
+	}
 }
 
 ```

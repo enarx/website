@@ -11,21 +11,40 @@ https://github.com/WebAssembly/wasi-sdk
 We will create a simple C++ application that will return us the fibonacci sequence of an integer input. Create a file named `fibonacci.cpp`:
 
 ```cpp
-// Simple Program to calculate Fibonacci Sequence of an integer input
+#include <cstdlib>
 #include <iostream>
+#include <string.h>
+
 using namespace std;
-int FibonacciSequence(int num) {
-    if(num <= 1) {
-        return num ;
-    }
-    return FibonacciSequence(num-1) + FibonacciSequence(num-2);
+
+unsigned long fib(unsigned long i) {
+  if (i <= 1) {
+    return i;
+  }
+  return fib(i - 1) + fib(i - 2);
 }
-int main(){
-    cout << "Enter the Number" << endl;
-    int n ;
-    cin  >> n ;
-    
-    cout << "Fibonacci Sequence term at " << n << "  " << "is " << FibonacciSequence(n) << endl;
+
+int main(int argc, char *argv[]) {
+  cout << "C++ - Fibonacci sequence example" << endl;
+  if (argc <= 1) {
+    unsigned long n;
+    cout << "Enter a non-negative number:" << endl;
+    cin >> n;
+    cout << "Fibonacci sequence number at index " << n << " is " << fib(n)
+         << endl;
+  } else {
+    for (unsigned int i = 1; i < argc; i++) {
+      errno = 0;
+      unsigned long n = strtoul(argv[i], NULL, 10);
+      if (errno != 0) {
+        cerr << "Failed to parse argument into a number: " << strerror(errno)
+             << endl;
+        exit(1);
+      }
+      cout << "Fibonacci sequence number at index " << n << " is " << fib(n)
+           << endl;
+    }
+  }
 }
 ```
 :::tip

@@ -13,17 +13,47 @@ Create a simple Zig program that calculates the fibonacci sequence of an integer
 ```zig
 const std = @import("std");
 
-fn fibonacci(index: u32) u32 {
-    if (index < 2) return index;
-    return fibonacci(index - 1) + fibonacci(index - 2);
+fn fibonacci(i: u64) u64 {
+    if (i <= 1) return i;
+    return fibonacci(i - 1) + fibonacci(i - 2);
+}
+
+fn print_fibonacci(w: anytype, s: []const u8) !void {
+    const i = try std.fmt.parseUnsigned(u64, s, 10);
+    try w.print("Fibonacci sequence number at index {d} is {d}\n", .{i, fibonacci(i)});
 }
 
 pub fn main() !void {
-    const stdout = std.io.getStdOut().writer();
-    var x: u32 = 7;
-    
-    try stdout.print("fibonacci of {d} ", .{x});
-    try stdout.print("is: {d} \n ", .{fibonacci(x)}  );
+    const alloc: std.mem.Allocator = std.heap.page_allocator;
+
+    var args = try std.process.argsAlloc(alloc);
+    defer alloc.free(args);
+
+    const stdout = std.io.getStdOut();
+    defer stdout.close();
+
+    const out = stdout.writer();
+
+    try out.print("Zig - Fibonacci sequence example\n", .{});
+
+    const indexes = args[1..];
+    if (indexes.len > 0) {
+        for (indexes) |arg| {
+            try print_fibonacci(out, arg);
+        }
+    } else {
+        const stdin = std.io.getStdIn();
+        defer stdin.close();
+
+        try out.print("Enter a non-negative number:\n", .{});
+        var buf: [19]u8 = undefined;
+        if (try stdin.reader().readUntilDelimiterOrEof(&buf, '\n')) |arg| {
+            try print_fibonacci(out, arg);
+        } else {
+            std.debug.print("failed to read from stdin", .{});
+            std.process.exit(1);
+        }
+    }
 }
 ```
 :::tip
