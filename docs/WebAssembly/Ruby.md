@@ -15,11 +15,23 @@ The ruby.wasm installation guide explains how to run a Ruby application using wa
 Let's create a fibonacci example:
 
 ```ruby
-def fibonacci( n )
+def FibonacciSequence( n )
   return  n  if ( 0..1 ).include? n
-  ( fibonacci( n - 1 ) + fibonacci( n - 2 ) )
+  ( FibonacciSequence( n - 1 ) + FibonacciSequence( n - 2 ) )
 end
-puts fibonacci( 5 )
+
+puts "Ruby - Fibonacci sequence example"
+
+if ARGV.length > 0
+  ARGV.each { |arg|
+	n = arg.to_i
+    puts "Fibonacci sequence number at index #{n} is #{FibonacciSequence(n)}"
+  }
+else
+  puts "Enter a non-negative number:"
+  n = ARGF.gets.to_i
+  puts "Fibonacci sequence number at index #{n} is #{FibonacciSequence(n)}"
+end
 ```
 :::tip
 Access the [Ruby codex repository](https://github.com/enarx/codex/tree/main/Ruby) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/Ruby/fibonacci).

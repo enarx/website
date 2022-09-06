@@ -15,7 +15,6 @@ All of the build dependencies of the Javy toolchain have to be installed after c
 We will create a simple JavaScript application that will return us the Fibonacci sequence. Create a file named `index.js`:
 
 ```javascript
-//Simple Program to calculate Fibonacci Sequence of an Integer Input
 function fibonacci(){
   var num = 10;
   var a = 1, b = 0, temp;
@@ -27,7 +26,7 @@ function fibonacci(){
     num--;
   }
 console.log("Fibonacci result is: ",b);
-  
+
 }
 
 var Shopify = {

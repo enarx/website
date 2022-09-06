@@ -21,19 +21,14 @@ The fibonacci code in AssemblyScript is:
 
 ```typescript
 import "wasi";
-import { Console } from "as-wasi";
 
-export function fibo (n: i32): i32 {
-if(n==1 || n==0){
-  return n;
-}
-else{
-  return fibo(n-1) + fibo(n-2);
-}
+export function fibo(n: i32): i32 {
+  if (n == 0 || n == 1) return n;
+  return fibo(n - 1) + fibo(n - 2);
 }
 
-let a: i32 = fibo(7);
-Console.log(a.toString());
+let res = fibo(7);
+console.log(res.toString());
 ```
 :::tip
 Access the [AssemblyScript codex repository](https://github.com/enarx/codex/tree/main/AssemblyScript) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/AssemblyScript/fibonacci).
