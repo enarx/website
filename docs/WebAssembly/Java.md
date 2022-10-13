@@ -1,7 +1,8 @@
 # WebAssembly with Java
 
 :::note
-In progress
+* This page is a work in progress  
+* There is a a friendly [fork](https://github.com/fermyon/teavm-wasi) of [TeaVM](https://teavm.org/), modified to support WASI and the WebAssembly Component Model proposal.
 :::
 
 ## Install Java

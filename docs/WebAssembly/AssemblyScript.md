@@ -13,7 +13,7 @@ To install AssemblyScript on your local system, run the command:
 npm install -g assemblyscript
 ```
 
-We also need to install `as-wasi`. It is an easy to use API for the AssemblyScript WASI bindings. By bindings, we mean the declared functions that would map to the `WASI` host functions. The command to do the same is :
+We also need to install `as-wasi`. It is an easy to use API for the AssemblyScript WASI bindings. By bindings, we mean the declared functions that would map to the `WASI` host functions. The command to do the same is:
 
 ```
 npm install --save as-wasi
@@ -43,7 +43,7 @@ We need to import `wasi` to add some nice defaults for compiling to `WASI` and w
 
 ## Compile AssemblyScript code to Wasm
 
-To compile your AssemblyScript code, simply run :
+To compile your AssemblyScript code, simply run:
 
 ```
 asc fibo.ts -o fibo.wasm
