@@ -1,5 +1,10 @@
 # WebAssembly with Swift
 
+:::note
+* WebAssembly support for Swift is good thanks to [SwiftWasm](https://swiftwasm.org/).
+* SwiftWasm compiles Swift code to WebAssembly.
+:::
+
 ## Install Swift
 
 To install Docker on your local system, refer the [official guide](https://docs.docker.com/get-docker/).

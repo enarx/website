@@ -1,5 +1,10 @@
 # WebAssembly with AssemblyScript
 
+:::note
+* AssemblyScript was designed for WebAssembly and has a syntax similar to TypeScript. 
+* Support for WASI is uncertain, given that the AssemblyScript team has [criticized](https://www.assemblyscript.org/standards-objections.html) the WASI standardization process.
+:::
+
 ## Install AssemblyScript
 
 To install AssemblyScript on your local system, run the command:

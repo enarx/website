@@ -1,5 +1,9 @@
 # WebAssembly with Grain
 
+:::note
+* Grain is a functional programming language designed for WebAssembly.
+:::
+
 ## Install Grain
 
 To install Grain, follow the instructions here:

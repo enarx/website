@@ -1,6 +1,11 @@
 # WebAssembly with TypeScript
 
-TypeScript is a superset of JavaScript. Therefore, the best approach to using TypeScript in WebAssembly is to transpile it into JavaScript.
+:::note
+* TypeScript is a superset of JavaScript. Therefore, the best approach to using TypeScript in WebAssembly is to transpile it into JavaScript.
+* WebAssembly support for JavaScript is good thanks to [Javy](https://github.com/Shopify/javy).
+* Javy compiles [QuickJS](https://bellard.org/quickjs/), a tiny JavaScript runtime, to Wasm, along with script to be executed. 
+* JavaScript is the second most popular and desirable language to work with WebAssembly.
+:::
 
 ## Install TypeScript compiler 
 
