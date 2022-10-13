@@ -29,18 +29,18 @@ The following table shows Enarx support and tier information for each language, 
 | [Grain](Grain) | [Repo](https://github.com/enarx/codex/tree/main/Grain) | Experimental | Tier 3 |
 | [Zig](Zig) | [Repo](https://github.com/enarx/codex/tree/main/Zig) | Experimental | Tier 3 |
 
-Enarx support for Rust, C, C++, and Go are excellent (Tier 1). Other languages are experimental and are ranked either Tier 2 or Tier 3 based on their Wasm/WASI support, overall popularity, as well as their Wasm/WASI popularity and desirability. Please select each language to learn more, or read the next sections to compare different languages.
+Enarx support for Rust, C, C++, and Go are excellent (Tier 1). Other languages are experimental and are ranked either Tier 2 or Tier 3 based on their Wasm/WASI support, overall popularity, as well as their Wasm/WASI popularity and desirability. Please select each language to view the dedicated Wasm Guide, or read the next sections to compare the different languages.
 
 
 ## Wasm/WASI Popularity and Desirability
 
 [The State of WebAssembly](https://blog.scottlogic.com/2022/06/20/state-of-wasm-2022.html) is an annual survey that provides an overview of the Wasm landscape, including language popularity (current usage) and desirability (future).
 
-The Enarx team has explored the [data](https://wasmweekly.news/assets/state-of-webassembly-2022.csv) and further analysed it specifically for respondents who are using wasmtime (the runtime used by Enarx). The table with the results are presented below:
+The Enarx team has explored the [data](https://wasmweekly.news/assets/state-of-webassembly-2022.csv) and created a [report](https://docs.google.com/spreadsheets/d/11uWt7C8MBp9sgSbXEVntbf1VRJ_-yHkChw0TeXoppEY/edit#gid=693866223) specifically for respondents who are using wasmtime (the runtime used by Enarx). The table with the results are presented below:
 
 | Language | Popularity (wasmtime) | Desirability (wasmtime) | Overall Popularity |
 |---|---|---|------|
-| [Rust](Rust) |44% use frequently|68% are a lot interested|#19 on RedMonk's rank|
+| [Rust](Rust) |44% use frequently|68% are a lot interested|#19 in RedMonk ranking|
 | [C++](C++) |10%|17%|#7|
 | [C](C) |10%|17%|#10|
 | [Golang](Golang) |7%|32%|#16|
@@ -55,7 +55,7 @@ The Enarx team has explored the [data](https://wasmweekly.news/assets/state-of-w
 | [Grain](Grain) |1%|9%|-|
 | [Zig](Zig) |2%|12%|-|
 
-Additionally, the Enarx team has combined the Wasm/WASI popularity/desirability presented above with the overall popularity of each language according to the [RedMonk Programming Language Rankings](https://redmonk.com/sogrady/2022/03/28/language-rankings-1-22/). In the RedMonk's ranking, the most popular languages are, in order: JavaScript, Python, Java, PHP, C#, C++, TypeScript, Ruby, C, Swift, C, Swift, R, Objective-C, Shell, Scala, Go, PowerShell, Kotlin, Rust, and Dart. 
+Additionally, the Enarx team has combined the Wasm/WASI popularity/desirability presented above with the overall popularity of each language according to the [RedMonk Programming Language Rankings](https://redmonk.com/sogrady/2022/03/28/language-rankings-1-22/). In the RedMonk rankings, the most popular languages are, in order: JavaScript, Python, Java, PHP, C#, C++, TypeScript, Ruby, C, Swift, C, Swift, R, Objective-C, Shell, Scala, Go, PowerShell, Kotlin, Rust, and Dart. 
 
 ## WASI Support
 

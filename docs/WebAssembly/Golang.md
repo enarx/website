@@ -12,8 +12,6 @@ Go to [go.dev](https://go.dev/) and follow the instructions.
 
 ## Install TinyGo
 
-A Go compiler intended for use in small places such as microcontrollers, WebAssembly (Wasm), and command-line tools
-
 Go to [tinygo.org](https://tinygo.org/getting-started/install/) and follow the instructions.
 
 :::note
