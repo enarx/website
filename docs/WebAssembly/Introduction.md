@@ -40,12 +40,12 @@ The Enarx team has explored the [data](https://wasmweekly.news/assets/state-of-w
 
 | Language | Popularity (wasmtime) | Desirability (wasmtime) | Overall Popularity |
 |---|---|---|------|
-| [Rust](Rust) |44% use frequently|68% are a lot interested|#19 in RedMonk ranking|
+| [Rust](Rust) |44% use frequently|68% are a lot interested|#19 in RedMonk|
 | [C++](C++) |10%|17%|#7|
 | [C](C) |10%|17%|#10|
 | [Golang](Golang) |7%|32%|#16|
 | [JavaScript](JavaScript) |13%|25%|#1|
-| [TypeScript](TypeScript) |13%|25%|#1|
+| [TypeScript](TypeScript) |13%|25%|#7|
 | [Python](Python) |3%|22%|#2|
 | [.NET](dotnet) |2%|13%|#5|
 | [Java](Java) |2%|9%|#3|
@@ -67,10 +67,10 @@ The Enarx team is developing a table to show WASI support for various programmin
 
 | Language  | I/O | Filesystem | Sockets | Threads | Crypto |
 |---|---|---|---|---|---|
-| [Rust](Rust) |---|---|---|---|---|
-| [C++](C++) |---|---|---|---|---|
-| [C](C) |---|---|---|---|---|
-| [Golang](Golang) |---|---|---|---|---|
+| [Rust](Rust) |✅|✅|✅|⏳|⏳|
+| [C++](C++) |✅|✅|✅|⏳|⏳|
+| [C](C) |✅|✅|✅|⏳|⏳|
+| [Golang](Golang) |✅|✅|⏳|⏳|⏳|
 | [JavaScript](JavaScript) |---|---|---|---|---|
 | [TypeScript](TypeScript) |---|---|---|---|---|
 | [Python](Python) |---|---|---|---|---|
