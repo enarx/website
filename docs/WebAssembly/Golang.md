@@ -1,10 +1,16 @@
 # WebAssembly with Golang
 
+:::note
+* WebAssembly support for Go is excellent thanks to [TinyGo](https://tinygo.org/).
+* TinyGo provides a compiler based on LLVM.
+* Go is among the most popular and the second most desirable language to work with WebAssembly (using wasmtime).
+:::
+
 ## Install Golang
 
 Go to [go.dev](https://go.dev/) and follow the instructions.
 
-## Install Tinygo
+## Install TinyGo
 
 A Go compiler intended for use in small places such as microcontrollers, WebAssembly (Wasm), and command-line tools
 

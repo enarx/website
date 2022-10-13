@@ -1,5 +1,10 @@
 # WebAssembly with Zig
 
+:::note
+* WebAssembly support for Zig is excellent.
+* Zig uses LLVM, thus it provides wasm32 target architecture.
+:::
+
 ## Install Zig
 
 To install Zig, follow the instructions here:

@@ -1,5 +1,12 @@
 # WebAssembly with Ruby
 
+:::note
+* WebAssembly support for Ruby is good thanks to [ruby.wasm](https://github.com/ruby/ruby.wasm/).
+* ruby.wasm is a collection of WebAssembly ports of the CRuby. It enables running Ruby applications on WASI compatible WebAssembly runtimes.
+* It uses [wasi-vfs](https://github.com/kateinoigakukun/wasi-vfs/) to create a virtual filesystem layer for WASI.
+* Sockets and threads are not supported yet.
+:::
+
 ## Install wasi-vfs and ruby.wasm
 
 Install wasi-vfs and ruby.wasm following the instructions here:

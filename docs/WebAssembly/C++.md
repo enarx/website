@@ -1,5 +1,12 @@
 # WebAssembly with C++
 
+:::note
+* WebAssembly support for C++ is excellent.
+* C/C++ are among the most popular languages to work with WebAssembly.
+* The [WASI SDK](https://github.com/WebAssembly/wasi-sdk/) toolchain is maintained by the Bytecode Alliance.
+* WASI SDK pulls upstream projects Clang and LLVM, as well as wasi-libc. 
+:::
+
 ## Install WASI SDK
 
 Install [WASI SDK](https://github.com/WebAssembly/wasi-sdk/) following the instructions:

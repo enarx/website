@@ -1,5 +1,12 @@
 # WebAssembly with Rust
 
+:::note
+* WebAssembly support for Rust is excellent.
+* Rust is the most popular and desirable language to work with WebAssembly.
+* Both Enarx and wasmtime (Enarx's runtime) are written in Rust.
+* The Enarx team has contributed upstream to WASI sockets, threads, and crypto.
+:::
+
 ## Install Rust
 
 To install Rust, go to [rust-lang.org](https://www.rust-lang.org/tools/install) and follow the instructions using rustup.

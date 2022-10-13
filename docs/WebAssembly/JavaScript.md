@@ -1,5 +1,12 @@
 # WebAssembly with JavaScript
 
+:::note
+* WebAssembly support for JavaScript is good thanks to [Javy](https://github.com/Shopify/javy).
+* Javy compiles [QuickJS](https://bellard.org/quickjs/), a tiny JavaScript runtime, to Wasm, along with script to be executed. 
+* JavaScript is the second most popular and desirable language to work with WebAssembly.
+* TypeScript, a superset of JavaScript, can be transpiled into JavaScript before being compiled to Wasm.
+:::
+
 ## Install Javy
 
 Install Javy following the instructions here:

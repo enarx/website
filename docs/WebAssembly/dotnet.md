@@ -1,5 +1,10 @@
 # WebAssembly With .NET 
 
+:::note
+* WebAssembly support for .NET is good thanks to the [dotnet WASI SDK](https://github.com/SteveSandersonMS/dotnet-wasi-sdk).
+* dotnet WASI SDK is an experimental package that can build .NET Core projects (including whole ASP.NET Core applications) into standalone WASI-compliant .wasm files.
+:::
+
 ## Install .NET Preview (7.0.0-preview.4)
 
 You can download .NET and follow installation instructions here:

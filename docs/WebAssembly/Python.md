@@ -1,5 +1,13 @@
 # WebAssembly with Python
 
+:::note
+* WebAssembly support for Python is good thanks to [CPython on wasm32-wasi](https://github.com/singlestore-labs/python-wasi/).
+* CPython on wasm32-wasi consists of utilities and libraries for building [CPython](https://github.com/python/cpython) sources for the WebAssembly platform using the [WASI SDK](https://github.com/WebAssembly/wasi-sdk) and [wasix](https://github.com/singlestore-labs/wasix).
+* Python is one of the most desirable languages to work with WebAssembly.
+* The Python interpreter needs to be compiled to Wasm, and Python libraries should be available from the VFS (virtual filesystem).
+* Currently Python works with wasmtime, and should work with Enarx once it has VFS support.
+:::
+
 ## Environment Setup
 
 ### Docker
