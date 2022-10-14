@@ -1,7 +1,7 @@
 # WebAssembly with Java
 
 :::note
-* There is a a friendly [fork](https://github.com/fermyon/teavm-wasi) of [TeaVM](https://teavm.org/), modified to support WASI and the WebAssembly Component Model proposal.
+* WebAssembly support for Java is good thanks to a friendly [fork](https://github.com/fermyon/teavm-wasi) of [TeaVM](https://teavm.org/), modified to support WASI and the WebAssembly Component Model proposal.
 :::
 
 ## Install Java
@@ -34,7 +34,7 @@ cd tests/wasi
 mvn clean install
 ```
 
-A `class.wasm` file will be generated at ```target/generated/wasm/teavm-wasm/```.
+A `classes.wasm` file will be generated at ```target/generated/wasm/teavm-wasm/```.
 
 :::tip
 If you encounter the following error:
@@ -116,7 +116,7 @@ Now edit the main class name at the `pom.xml` file located at `tests/wasi`:
 
 ## Compile Java code to Wasm
 
-Execute the Maven command to generate a new `class.wasm` file:
+Execute the Maven command to generate a new `classes.wasm` file:
 
 ```
 mvn clean install
