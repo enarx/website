@@ -33,16 +33,16 @@ Regarding SSH keys, please try to stick to something modern.
 
 We currently have two lab machines:
 
-An AMD SEV box, at milan.sev.lab.enarx.dev.
+An AMD SEV box, at rivest.milan.amd.lab.enarx.dev.
 
-An Intel SGX2 box, at icelake.sgx.lab.enarx.dev.
+An Intel SGX2 box, at caesar.icelake.intel.lab.enarx.dev.
 
 ### Connecting to the machines
 
 Once your user has been created and SSH key authorized, you can connect using SSH:
 
 ```
-ssh my-github-username@milan.sev.lab.enarx.dev
+ssh my-github-username@rivest.milan.amd.lab.enarx.dev
 ```
 
 ### Adding software packages
