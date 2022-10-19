@@ -4,13 +4,14 @@ Enarx keeps can be deployed to various cloud environments. This document aims to
 
 # Cloud Support
 
-|                             | AMD SEV-SNP | Intel SGX2 | Instances / Notes                                          |
-|-----------------------------|-------------|------------|----------------------------------------------------------|
-| [AWS](#amazon-web-services) | ✅           | ❌          | `m6a.metal` **DO NOT** install the Intel QPL (see below) |
-| [Azure](#azure)             | ❌           | ✅          | `DCsv3` `DCdsv3`                                         |
-| [Equinix](#equinix)         | ✅           | ✅          | `n3.xlarge` `m3.large.opt-c2m3s3` `c3.medium.opt-c1m1`   |
-| [IBM Cloud](#ibm-cloud)     | ❓           | ❓          |                                                          |
-| [PhoenixNAP](#phoenixnap)   | ❌           | ✅          | Multiple Instances (see CSP documentation)               |
+|                               | AMD SEV-SNP | Intel SGX2 | Instances / Notes                                        |
+|-------------------------------|-------------|------------|----------------------------------------------------------|
+| [AWS](#amazon-web-services)   | ✅          | ❌         | `m6a.metal` **DO NOT** install the Intel QPL (see below) |
+| [Azure](#azure)               | ❌          | ✅         | `DCsv3` `DCdsv3`                                         |
+| [Equinix](#equinix)           | ✅          | ✅         | `n3.xlarge` `m3.large.opt-c2m3s3` `c3.medium.opt-c1m1`   |
+| [Google Cloud](#google-cloud) | ❌          | ❌         | Not yet supported (see below).                           |
+| [IBM Cloud](#ibm-cloud)       | 🕑          | 🕑         | Research in progress                                     |
+| [PhoenixNAP](#phoenixnap)     | ❌          | ✅         | Multiple Instances (see CSP documentation)               |
 
 # General instructions
 
@@ -114,6 +115,14 @@ Azure provides their own certificate caching infrastructure. Attempting to use t
 ### Availability
 
 Not all instances are available by default to all customers. For access to the above instances, you may need to contact Equinix directly.
+
+## Google Cloud
+
+Google does not offer SGX VMs. And while Google does have a bare-metal service through a third party partnership, the latest generation of CPUs in their offering is one generation behind. We expect this to change in the future.
+
+## IBM Cloud
+
+Research is currently in progress.
 
 ## PhoenixNAP
 
