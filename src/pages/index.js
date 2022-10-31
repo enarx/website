@@ -31,7 +31,10 @@ function HomepageHeader() {
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`${siteConfig.title}`} description="Enarx: Confidential Computing with WebAssembly">
+    <Layout
+      title={`${siteConfig.title}`}
+      description="Enarx: Confidential Computing with WebAssembly"
+    >
       <HomepageHeader />
       <main>
         <HomepageFeatures />
