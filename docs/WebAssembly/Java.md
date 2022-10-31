@@ -105,7 +105,7 @@ public class Fibonacci {
 ```
 
 :::tip
-Access the [Java codex repository](https://github.com/enarx/codex/tree/main/Java) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/Java/fibonacci).
+Access the [Java codex repository](https://github.com/enarx/codex/tree/main/examples/java) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/demos/fibonacci/java).
 :::
 
 Now edit the main class name at the `pom.xml` file located at `tests/wasi`:

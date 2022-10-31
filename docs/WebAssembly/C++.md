@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 :::tip
-Access the [C++ codex repository](https://github.com/enarx/codex/tree/main/C%2B%2B) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/C%2B%2B/fibonacci).
+Access the [C++ codex repository](https://github.com/enarx/codex/tree/main/examples/c%2B%2B) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/demos/fibonacci/c%2B%2B).
 :::
 
 ## Compile the C++ code to Wasm

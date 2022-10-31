@@ -34,7 +34,7 @@ function fibonacci(num: number) {
 }
 ```
 :::tip
-Access the [TypeScript codex repository](https://github.com/enarx/codex/tree/main/TypeScript) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/TypeScript/fibonacci).
+Access the [TypeScript codex repository](https://github.com/enarx/codex/tree/main/examples/typescript) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/demos/fibonacci/typescript).
 :::
 
 ## Transpiling TypeScript to JavaScript
