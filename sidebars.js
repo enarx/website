@@ -36,7 +36,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'WebAssembly Guide',
-      items: ['WebAssembly/Introduction', 'WebAssembly/Rust', 'WebAssembly/C++', 'WebAssembly/C', 'WebAssembly/Golang', 'WebAssembly/JavaScript', 'WebAssembly/TypeScript', 'WebAssembly/Python', 'WebAssembly/dotnet', 'WebAssembly/Java', 'WebAssembly/Ruby', 'WebAssembly/Swift', 'WebAssembly/AssemblyScript', 'WebAssembly/Grain', 'WebAssembly/Zig'],
+      items: ['WebAssembly/Introduction', 'WebAssembly/Rust', 'WebAssembly/C++', 'WebAssembly/C', 'WebAssembly/Golang', 'WebAssembly/JavaScript', 'WebAssembly/TypeScript', 'WebAssembly/Python', 'WebAssembly/dotnet', 'WebAssembly/Java', 'WebAssembly/Zig', 'WebAssembly/Ruby', 'WebAssembly/Swift', 'WebAssembly/AssemblyScript', 'WebAssembly/Grain'],
     },
     {
       type: 'category',
