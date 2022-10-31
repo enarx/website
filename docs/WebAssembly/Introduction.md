@@ -23,11 +23,11 @@ The following table shows Enarx support and tier information for each language, 
 | [Python](Python) | [Repo](https://github.com/enarx/codex/tree/main/Python) | Experimental | Tier 2 |
 | [.NET](dotnet) | [Repo](https://github.com/enarx/codex/tree/main/C%23) | Experimental | Tier 2 |
 | [Java](Java) | [Repo](https://github.com/enarx/codex/tree/main/Java) | Experimental | Tier 2 |
+| [Zig](Zig) | [Repo](https://github.com/enarx/codex/tree/main/Zig) | Experimental | Tier 3 |
 | [Ruby](Ruby) | [Repo](https://github.com/enarx/codex/tree/main/Ruby) | Experimental | Tier 3 |
 | [Swift](Swift) | [Repo](https://github.com/enarx/codex/tree/main/Swift) | Experimental | Tier 3 |
 | [AssemblyScript](AssemblyScript) | [Repo](https://github.com/enarx/codex/tree/main/AssemblyScript) | Experimental | Tier 3 |
 | [Grain](Grain) | [Repo](https://github.com/enarx/codex/tree/main/Grain) | Experimental | Tier 3 |
-| [Zig](Zig) | [Repo](https://github.com/enarx/codex/tree/main/Zig) | Experimental | Tier 3 |
 
 Enarx support for Rust, C, C++, and Go are excellent (Tier 1). Other languages are experimental and are ranked either Tier 2 or Tier 3 based on their Wasm/WASI support, overall popularity, as well as their Wasm/WASI popularity and desirability. Please select each language to view the dedicated Wasm Guide, or read the next sections to compare the different languages.
 
@@ -49,11 +49,11 @@ The Enarx team has explored the [data](https://wasmweekly.news/assets/state-of-w
 | [Python](Python) |3%|22%|#2|
 | [.NET](dotnet) |2%|13%|#5|
 | [Java](Java) |2%|9%|#3|
+| [Zig](Zig) |2%|12%|-|
 | [Ruby](Ruby) |1%|9%|#9|
 | [Swift](Swift) |2%|9%|#11|
 | [AssemblyScript](AssemblyScript) |7%|19%|-|
 | [Grain](Grain) |1%|9%|-|
-| [Zig](Zig) |2%|12%|-|
 
 Additionally, the Enarx team has combined the Wasm/WASI popularity/desirability presented above with the overall popularity of each language according to the [RedMonk Programming Language Rankings](https://redmonk.com/sogrady/2022/03/28/language-rankings-1-22/). In the RedMonk rankings, the most popular languages are, in order: JavaScript, Python, Java, PHP, C#, C++, TypeScript, Ruby, C, Swift, C, Swift, R, Objective-C, Shell, Scala, Go, PowerShell, Kotlin, Rust, and Dart. 
 
@@ -76,11 +76,11 @@ The Enarx team is developing a table to show WASI support for various programmin
 | [Python](Python) |---|---|---|---|---|
 | [.NET](dotnet) |---|---|---|---|---|
 | [Java](Java) |---|---|---|---|---|
+| [Zig](Zig) |---|---|---|---|---|
 | [Ruby](Ruby) |---|---|---|---|---|
 | [Swift](Swift) |---|---|---|---|---|
 | [AssemblyScript](AssemblyScript) |---|---|---|---|---|
 | [Grain](Grain) |---|---|---|---|---|
-| [Zig](Zig) |---|---|---|---|---|
 
 ## Benchmarking
 
@@ -96,12 +96,13 @@ The Enarx team is creating a testing framework that will automatically generate 
 | [C++](C++) |---|---|---|
 | [C](C) |---|---|---|
 | [Golang](Golang) |---|---|---|
-| [Ruby](Ruby) |---|---|---|
-| [.NET](dotnet) |---|---|---|
-| [Python](Python) |---|---|---|
 | [JavaScript](JavaScript) |---|---|---|
-| [TypeScript](TypeScript) |---|---|---|
-| [AssemblyScript](AssemblyScript) |---|---|---|
-| [Swift](Swift) |---|---|---|
-| [Grain](Grain) |---|---|---|
+| [TypeScript](TypeScript) |---|---|---|| [Ruby](Ruby) |---|---|---|
+| [Python](Python) |---|---|---|
+| [.NET](dotnet) |---|---|---|
+| [Java](Java) |---|---|---|
 | [Zig](Zig) |---|---|---|
+| [Ruby](Ruby) |---|---|---|
+| [Swift](Swift) |---|---|---|
+| [AssemblyScript](AssemblyScript) |---|---|---|
+| [Grain](Grain) |---|---|---|
