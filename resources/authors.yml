@@ -70,4 +70,10 @@ jarkko:
   name: Jarkko Sakkinen
   title: Software Engineer
   url: https://github.com/jarkkojs
-  image_url: https://avatars.githubusercontent.com/u/112336?v=4
+  image_url: https://github.com/jarkkojs.png
+
+jen:
+  name: Jen Wike Huger
+  title: VP of Marketing
+  url: https://github.com/JenWike
+  image_url: https://github.com/JenWike.png
