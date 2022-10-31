@@ -60,7 +60,7 @@ else:
         print(f"Fibonacci sequence number at index {idx} is {fib(idx)}")
 ```
 :::tip
-Access the [Python codex repository](https://github.com/enarx/codex/tree/main/Python) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/Python/fibonacci).
+Access the [Python codex repository](https://github.com/enarx/codex/tree/main/examples/python) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/demos/fibonacci/python).
 :::
 
 ## Run with Wasmtime

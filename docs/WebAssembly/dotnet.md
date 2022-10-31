@@ -55,7 +55,7 @@ namespace MyFirstWasiApp
 }
 ```
 :::tip
-Access the [C# codex repository](https://github.com/enarx/codex/tree/main/C%23) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/C%23/fibonacci).
+Access the [C# codex repository](https://github.com/enarx/codex/tree/main/examples/c%23) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/demos/fibonacci/c%23).
 :::
 
 :::note

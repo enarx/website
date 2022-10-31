@@ -62,7 +62,7 @@ pub fn main() !void {
 }
 ```
 :::tip
-Access the [Zig codex repository](https://github.com/enarx/codex/tree/main/Zig) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/Zig/fibonacci).
+Access the [Zig codex repository](https://github.com/enarx/codex/tree/main/examples/zig) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/demos/fibonacci/zig).
 :::
 
 ## Compile the Zig code

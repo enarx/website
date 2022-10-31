@@ -41,7 +41,7 @@ var Shopify = {
 };
 ```
 :::tip
-Access the [JavaScript codex repository](https://github.com/enarx/codex/tree/main/JavaScript) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/JavaScript/fibonacci).
+Access the [JavaScript codex repository](https://github.com/enarx/codex/tree/main/examples/javascript) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/demos/fibonacci/javascript).
 :::
 
 :::note

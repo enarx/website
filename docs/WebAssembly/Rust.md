@@ -59,7 +59,7 @@ fn main() {
   
 ```
 :::tip
-Access the [Rust codex repository](https://github.com/enarx/codex/tree/main/Rust) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/Rust/fibonacci).
+Access the [Rust codex repository](https://github.com/enarx/codex/tree/main/examples/rust) for code samples, including the [fibonacci example](https://github.com/enarx/codex/tree/main/demos/fibonacci/rust).
 :::
 
 ## Compile Rust
