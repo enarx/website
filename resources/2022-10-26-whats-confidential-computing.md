@@ -1,5 +1,5 @@
 ---
-slug: 2022-10-26-cc
+slug: 2022-10-26-whats-confidential-computing
 title: "What is Confidential Computing?"
 authors: [jen]
 tags: [Profian's Blog]

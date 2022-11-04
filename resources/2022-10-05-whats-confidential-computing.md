@@ -1,5 +1,5 @@
 ---
-slug: 2022-10-01-confidential-computing
+slug: 2022-10-05-whats-confidential-computing
 title: "White Paper: What is Confidential Computing?"
 authors: [mike]
 tags: [White Paper]
