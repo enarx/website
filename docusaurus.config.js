@@ -197,6 +197,10 @@ const config = {
                 label: 'Wasm Codex',
                 to: 'https://github.com/enarx/codex/',
               },
+              {
+                label: 'Enarx VS Code',
+                to: 'https://github.com/enarx/vscode-enarx/',
+              },
             ],
           },
           {
@@ -335,6 +339,10 @@ const config = {
               {
                 label: 'Wasm Codex',
                 to: 'https://github.com/enarx/codex/',
+              },
+              {
+                label: 'Enarx VS Code',
+                to: 'https://github.com/enarx/vscode-enarx/',
               },
             ],
           },
