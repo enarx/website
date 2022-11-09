@@ -4,14 +4,15 @@ Enarx keeps can be deployed to various cloud environments. This document aims to
 
 # Cloud Support
 
-|                               | AMD SEV-SNP | Intel SGX2 | Instances / Notes                                        |
-|-------------------------------|-------------|------------|----------------------------------------------------------|
-| [AWS](#amazon-web-services)   | ✅          | ❌         | `m6a.metal` **DO NOT** install the Intel QPL (see below) |
-| [Azure](#azure)               | ❌          | ✅         | `DCsv3` `DCdsv3`                                         |
-| [Equinix](#equinix)           | ✅          | ✅         | `n3.xlarge` `m3.large.opt-c2m3s3` `c3.medium.opt-c1m1`   |
-| [Google Cloud](#google-cloud) | ❌          | ❌         | Not yet supported (see below).                           |
-| [IBM Cloud](#ibm-cloud)       | 🕑          | 🕑         | Research in progress                                     |
-| [PhoenixNAP](#phoenixnap)     | ❌          | ✅         | Multiple Instances (see CSP documentation)               |
+|                                | AMD SEV-SNP | Intel SGX2 | Instances / Notes                                        |
+|--------------------------------|-------------|------------|----------------------------------------------------------|
+| [Alibaba Cloud](#alibaba-cloud)| 🕑          | ✅         | SGX: `*7t`, SEV-SNP: Research in progress                |
+| [AWS](#amazon-web-services)    | ✅          | ❌         | `m6a.metal` **DO NOT** install the Intel QPL (see below) |
+| [Azure](#azure)                | ❌          | ✅         | `DCsv3` `DCdsv3`                                         |
+| [Equinix](#equinix)            | ✅          | ✅         | `n3.xlarge` `m3.large.opt-c2m3s3` `c3.medium.opt-c1m1`   |
+| [Google Cloud](#google-cloud)  | ❌          | ❌         | Not yet supported (see below).                           |
+| [IBM Cloud](#ibm-cloud)        | 🕑          | 🕑         | Research in progress                                     |
+| [PhoenixNAP](#phoenixnap)      | ❌          | ✅         | Multiple Instances (see CSP documentation)               |
 
 # General instructions
 
@@ -72,6 +73,13 @@ After this, install `sudo dnf install libsgx-dcap-ql`.
 
 For Azure, do not install the default quote provider library or PCCS service, for other environments, run `sudo dnf module enable nodejs:16 && sudo dnf install sgx-dcap-pccs libsgx-dcap-default-qpl`, and follow the instructions at the [Intel instructions](https://www.intel.com/content/www/us/en/developer/articles/guide/intel-software-guard-extensions-data-center-attestation-primitives-quick-install-guide.html) to get an API key.
 After this, run `sudo /opt/intel/sgx-dcap-pccs/install.sh` to configure the PCCS service.
+
+## Alibaba Cloud
+
+|             |   | Instances        | Notes                   |
+|-------------|---|------------------|-------------------------|
+| AMD SEV-SNP | 🕑 |                 |                         |
+| Intel SGX2  | ✅ | `*7t`           | 6.0.0+ kernel required. `*7t` instances are only available in China regions, which require Real-name Registration (except for the Hong Kong region) |
 
 ## Amazon Web Services
 
