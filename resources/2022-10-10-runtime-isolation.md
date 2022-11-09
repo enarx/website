@@ -1,5 +1,5 @@
 ---
-slug: 2022-10-20-runtime-isolation
+slug: 2022-10-10-runtime-isolation
 title: "White Paper: The 3 Types of Runtime Security Isolation"
 authors: [mike]
 tags: [White Paper]

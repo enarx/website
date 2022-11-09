@@ -1,5 +1,5 @@
 ---
-slug: 2022-10-10-insider-risk
+slug: 2022-10-01-insider-risk
 title: "White Paper: Managing Insider Risk with Confidential Computing"
 authors: [mike]
 tags: [White Paper]
