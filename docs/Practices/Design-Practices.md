@@ -1,9 +1,12 @@
 # Design Practices
 
+[![hackmd-github-sync-badge](https://hackmd.io/RwifznZpTjSetxwo0JOjeA/badge)](https://hackmd.io/RwifznZpTjSetxwo0JOjeA)
+
+
 ###### tags: `Practices`
 | Author | Period | State |
 | -------- | -------- | -------- |
-| Dmitri Pal     | December, 2022 | :thumbsup: **Active**| 
+| Dmitri Pal     | December, 2022 | :thumbsup: **Active**|
 
 ## Overview
 
@@ -28,12 +31,12 @@ The goals of creating a design are:
 * Enabling future community contributors and team members to get up to speed faster.
 
 ## When a design document should be created?
-Creating a design document is a pretty heavy-weight process and has a lot of cost for the team. It is not required to create a design document for every feature or bug. On the other side, when a design is missing, it might lead to disagreements during reviews and a more complicated review process. 
+Creating a design document is a pretty heavy-weight process and has a lot of cost for the team. It is not required to create a design document for every feature or bug. On the other side, when a design is missing, it might lead to disagreements during reviews and a more complicated review process.
 
 The document must be created if any of the following situations applies:
 - The feature has a direct user impact, for example a change or addition of a public API, changes to a CLI or a change to configuration file syntax.
 - The feature has security implications. Any changes to security properties of the system or any of its components require a design document.
-- If a submitted PR leads to a discussion that requires more in depth conversation and agreement. In this case the work on the PR should be paused and a design document should be created and reviewed by the team. 
+- If a submitted PR leads to a discussion that requires more in depth conversation and agreement. In this case the work on the PR should be paused and a design document should be created and reviewed by the team.
 
 The owner of the feature should use the best judgment and decide whether to create the document or not. There is no silver bullet and there is a level of uncertainty that needs to be accepted. But it is a responsibility of the feature owner to recognize the need for a design as soon as possible and, if such need is identified, follow the described process.
 

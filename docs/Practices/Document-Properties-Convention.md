@@ -1,9 +1,12 @@
 # Document Properties Convention
 
-###### tags: `Practices` 
+[![hackmd-github-sync-badge](https://hackmd.io/cCeJHwjBSYyxlYx2PyWVFA/badge)](https://hackmd.io/cCeJHwjBSYyxlYx2PyWVFA)
+
+
+###### tags: `Practices`
 | Author | Period | State |
 | -------- | -------- | -------- |
-| Dmitri Pal | December, 2022 | :thumbsup: **Active** | 
+| Dmitri Pal | December, 2022 | :thumbsup: **Active** |
 
 ## Overview
 
@@ -16,12 +19,12 @@ Each document must include:
     * **Instructions** - documents that hold instructions. These documents stay in the HackMD portal.
     * **Notes** - documents that contain notes, this type is usually used as a temporary storage for information that shapes other types of documents. These documents stay in the HackMD portal and can be retired once the main document is polished.
     * **Meeting** - documents that hold meeting notes, outcomes or plans and proposed agenda for different meetings. These documents stay in the HackMD portal.
-    
+
 * A table in the format:
 
     | Author | Period | State |
     | -------- | -------- | -------- |
-    | &nbsp; | |  | 
+    | &nbsp; | |  |
 
     * **Author** - the name(s) of the author/owner of the document
     * **Period** - roughly a month and a year the document content is relevant to. One should read this as "at the mentioned time period the document reflected a reality". For example if the Period states: "May, 2023" and it is "June, 2023" one can assume that the document is recent and the related practices or implementation have not evolved or diverged. If the current date is "June, 2025" this means that the document and related practices might have not been reviewed and adjusted for a while and might require maintenance.
