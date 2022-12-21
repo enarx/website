@@ -1,6 +1,12 @@
 # Networking
 
-Enarx has support for networking, and a TCP Echo Server example is available [here](https://github.com/enarx/codex/tree/main/Rust/mio-echo-tcp). This example is an adapted version of the upstream `mio` crate `tcp_server` example. The added part creates the `TcpListener` from file descriptor `3`,
+Enarx has support for networking. There are several demos and examples to explore how networking works in Enarx:
+- [Chat server in Rust](https://github.com/enarx/codex/tree/main/demos/chat-server)
+- [Chat client in Rust](https://github.com/enarx/codex/tree/main/demos/chat-client/rust)
+- [Chat client in C](https://github.com/enarx/codex/tree/main/demos/chat-client/c)
+- [Chat client in C++](https://github.com/enarx/codex/tree/main/demos/chat-client/c%2B%2B)
+
+We'll provide a walkthrough of the TCP Echo Server example available [here](https://github.com/enarx/codex/tree/main/examples/rust/mio/echo-tcp). This example is an adapted version of the upstream `mio` crate `tcp_server` example. The added part creates the `TcpListener` from file descriptor `3`,
 if the `LISTEN_FDS` environment variable is set.
 
 
