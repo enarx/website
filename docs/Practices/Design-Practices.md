@@ -18,7 +18,7 @@ This specific document focuses on the design related activities.
 
 Design is the process of creating an agreed to approach to implementing a specific feature. It can be, for example, an architectural diagram, a protocol definition, an interface specification, a schema of a database or something similar.
 
-The goals of creating a design are: 
+The goals of creating a design are:
 * Expressing or illustrating an idea of how something should be implemented
 * Sharing a perspective for a team discussion.
 * Agreeing as a team on how something should work and be implemented.

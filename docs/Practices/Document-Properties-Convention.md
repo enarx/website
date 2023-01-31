@@ -40,3 +40,4 @@ Each document must include:
             * :x: **Retired**
 
 We expect further changes to the tagging. As a result documents might hold older and refined properties format. There is **no** requirement to update the properties of all existing documents if the properties format changes. However, if a document requires maintenance for other reasons, the document properties should be adjusted to match the latest format.
+
