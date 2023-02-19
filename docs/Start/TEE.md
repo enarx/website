@@ -8,4 +8,8 @@ There are currently two leading models of TEEs:
 
 Applications that need to run in a TEE must be developed specifically for each platform, and they differ significantly depending if it’s a process-based or VM-based TEE model. Additionally, they must implement something called attestation, which is a validation process for the TEE to prove that it’s genuine before it can be trusted by the application. Rewriting the application or the custom VMM that runs it, as well as the attestation, for each hardware platform is extremely complex and time-consuming.
 
+
+![Visual representation of a TEE](/static/assets/images/enarx-tee.png)
+
+
 In the next section, we will introduce Enarx, an open source framework for running applications in TEEs that addresses many of the issues raised. We’ll give a simplified overview of the component architecture of Enarx (and how it allows for support for multiple hardware platforms) and the process of creating and deploying applications to TEE instances using Enarx.
