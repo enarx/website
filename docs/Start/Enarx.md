@@ -2,6 +2,8 @@
 
 Enarx is a framework for running applications in TEE instances – which we refer to as “Keeps”–without the need to trust lots of dependencies, without the need to rewrite the application, and without the need to implement attestation separately.
 
+![visual representation of Keeps](/static/assets/images/enarx-keep.png)
+
 Enarx aims to minimize the trust relationships required when executing applications, meaning that the only components which need to be trusted are: the CPU and associated firmware, the workload itself, and the Enarx middleware, which is fully open source and auditable. Applications run without any of the layers in the stack (e.g. hypervisor, kernel, user-space) being able to look into or alter the Keep or its contents.
 
 It provides a WebAssembly runtime, based on wasmtime, offering developers a wide range of language choices for implementation, including Rust, C, C++, C#, Go, Java, Python and Haskell. It is designed to work across silicon architectures transparently to the user so that the application can run equally simple on Intel platforms (SGX or the recently-announced TDX), AMD platforms (SEV) or forthcoming platforms such as Arms’ Realms and IBM’s PEF - all without having to recompile the application code.
