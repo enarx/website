@@ -4,4 +4,4 @@ Enarx is a leading open source framework for running applications in TEEs (Trust
 
 Here's a summary of some of the commonly used terms in this doc:
 
-![An Enarx Dictionary](/static/assets/images/enarx-dictionary.png)
+![An Enarx Dictionary](/img/enarx-dictionary.png)

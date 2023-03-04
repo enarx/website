@@ -6,7 +6,7 @@ There are three states in which data can be protected: at rest, in transit, and 
 
 In short:
 
-![visual representation of different states of data](/static/assets/images/enarx-states-of-data.png)
+![visual representation of different states of data](/img/enarx-states-of-data.png)
 
 
 When running a workload in the public cloud, either as a VM or container, the workload is susceptible to being tampered with by any individual or software with access to the host system. Even if the cloud provider has strict security policies, the workload is still susceptible if the host system itself has been compromised, including the operating system, firmware libraries, hypervisor, application stack, third party libraries, middleware, and drivers.
