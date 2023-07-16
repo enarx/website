@@ -11,7 +11,7 @@
 
 Install Javy following the instructions here:
 
-https://github.com/Shopify/javy
+https://github.com/bytecodealliance/javy
 
 :::note
 All of the build dependencies of the Javy toolchain have to be installed after cloning the GitHub repository.
