@@ -28,7 +28,7 @@ All project discussion takes place on **Rocket Chat**. Feel free to drop in and 
 You can find us here: [chat.enarx.dev](https://chat.enarx.dev)
 
 
-## Meetings
+## Meetings (on hold)
 
 We have **daily meetings** at 10:00-10:30 EST, using [Google Meet](https://meet.google.com/uxk-ipyg-iui). No account is needed to join.
 

@@ -1,5 +1,7 @@
 # Meetings
 
+:warning: **Enarx used to have regular meetings, but they are currently on hold due to the closing of Profian.** :warning:
+
 ## Enarx Daily Meeting
 
 We have **daily meetings** at 10:00-10:30 EST, using [Google Meet](https://meet.google.com/uxk-ipyg-iui). No account is needed to join.

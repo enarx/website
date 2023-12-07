@@ -46,7 +46,7 @@ We use "boards" to collect all issues related to one aspect of the project, such
 
 You can see the various boards (projects, in Github parlance) here: https://github.com/enarx/enarx/projects
 
-## Join meetings & board review
+## Join meetings & board review (on hold)
 Also mentioned on the main how to contribute page, we host regular meetings where you can come say hi, ask questions, or just listen to learn more about what's happening in the project.
 
 The full Enarx calendar is available as a [Google Calendar](https://calendar.google.com/calendar/embed?src=leatqk15m1f34loatvatftkm48%40group.calendar.google.com&ctz=America%2FNew_York).

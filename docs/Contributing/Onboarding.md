@@ -35,7 +35,7 @@ You can see the Enarx issues [here](https://github.com/enarx/enarx/issues)
 ## Join the chat
 Join the chat at [chat.enarx.dev](https://chat.enarx.dev) and come say hi, ask questions, or just read the conversation.
 
-## Join meetings & board review
+## Join meetings & board review (on hold)
 
 The full Enarx calendar is available as a [Google Calendar](https://calendar.google.com/calendar/embed?src=leatqk15m1f34loatvatftkm48%40group.calendar.google.com&ctz=America%2FNew_York).
 
