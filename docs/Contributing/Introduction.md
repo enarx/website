@@ -17,7 +17,7 @@ We are happy to answer as best we can any question you have about Enarx.
 
 There are three ways you can ask questions:
 - using the chat (see the Communicating section below)
-- during one of the weekly meetings (see the Meetings section below)
+- using GitHub [discussions](https://github.com/orgs/enarx/discussions)
 - using the issue tracker (see the [How to contribute: issues reporting](Issues) page)
 
 Please use whatever method you are most comfortable with.
@@ -25,24 +25,12 @@ Please use whatever method you are most comfortable with.
 ## Communicating
 All project discussion takes place on **Rocket Chat**. Feel free to drop in and say hi!
 
-You can find us here: [chat.enarx.dev](https://chat.enarx.dev)
+You can find us here: [chat.enarx.dev](https://chat.enarx.dev) or get in touch on GitHub [discussions](https://github.com/orgs/enarx/discussions).
 
 
-## Meetings
+## Outreach
 
-We have **daily meetings** at 10:00-10:30 EST, using [Google Meet](https://meet.google.com/uxk-ipyg-iui). No account is needed to join.
-
-The full Enarx calendar is available as a [Google Calendar](https://calendar.google.com/calendar/embed?src=leatqk15m1f34loatvatftkm48%40group.calendar.google.com&ctz=America%2FNew_York). No account is needed to view.
-
-The meetings happen on [Google Meet](https://meet.google.com/uxk-ipyg-iui). (You do not need any account to join.)
-
-Please check the [Meetings](https://enarx.dev/meetings) page for more information.
-
-
-### Meeting structure and focus
-Our usual routine is to go through any new issues that have been opened since the last meeting (triage) then have a quick round-the-horn discussion of the team's daily activities. Newcomers are very welcome, if you have any questions don't hesitate to join.
-
-There is also an outreach meeting, on Tuesdays and Wednesdays fortnightly. More info on the [outreach](Outreach) page.
+You can have a look at the [outreach issues](https://github.com/enarx/outreach/issues) to find something that needs to be done!
 
 ## How to contribute, in various ways
 There are multiple ways you can contribute to the Enarx project.

@@ -78,7 +78,7 @@ Participation in the Enarx community is governed by the [Contributor Covenant Co
 You can engage with us on the following channels:
 
 - [Chat](https://chat.enarx.dev)
-- [Meetings](https://enarx.dev/meetings)
+- [Discussions](https://github.com/orgs/enarx/discussions)
 
 ----
 
