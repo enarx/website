@@ -1,7 +1,7 @@
 ---
 slug: 2022-08-13-defcon-cryptle
 title: "Cryptle: a secure multi-party Wordle clone with Enarx"  
-authors: [richard, nick]
+authors: [richard, nick, tom]
 tags: [Event]
 ---
 
@@ -18,6 +18,8 @@ The standard way to engage with the game is for players to guess the secret word
 We'll provide an overview of an exploit of Enarx and we'll explain how we were able to fix it. Attendees will be invited to find new vulnerabilities as part of the Cryptle Hack Challenge.
 
 
-**Source**: DEFCON 2022
+**Source**: DEF CON 30
 
 **Link**: https://defcon.org
+
+**PDF**: [DEFCON30_Cryptle.pdf](/assets/docs/DEFCON30_Cryptle.pdf)

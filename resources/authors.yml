@@ -38,6 +38,12 @@ richard:
   url: https://github.com/rjzak
   image_url: https://github.com/rjzak.png
 
+tom:
+  name: Tom Dohrmann
+  title: Community member, Enarx hacker
+  url: https://github.com/Freax13
+  image_url: https://github.com/Freax13.png
+
 roman:
   name: Roman Volosatovs
   title: Senior Software Engineer

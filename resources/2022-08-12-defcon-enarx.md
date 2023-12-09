@@ -16,6 +16,8 @@ But being pwned does not necessarily mean it’s endgame. Confidential Computing
 This session will define Confidential Computing at a technical level and discuss current and upcoming hardware that have support for it. Later, we’ll introduce Enarx, an open source Linux Foundation project, and present a live demo to showcase Confidential Computing in a system that has been “pwned.”
 
 
-**Source**: DEFCON 2022
+**Source**: DEF CON 30
 
 **Link**: https://defcon.org
+
+**PDF**: [DEFCON30 Owned or pwned.pdf](/assets/docs/DEFCON30_Owned_or_pwned.pdf)
