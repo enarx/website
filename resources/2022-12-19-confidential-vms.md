@@ -9,3 +9,5 @@ If you are keeping up with the latest technology in cloud computing-related secu
 **Source**: Profian's Blog
 
 **Link**: https://profian.com/what-are-confidential-vms/
+
+**PDF**: [Enarx and Confidential VMs Compared.pdf](/assets/docs/Enarx_and_Confidential_VMs_compared.pdf)
