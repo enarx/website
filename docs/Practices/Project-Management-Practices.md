@@ -60,23 +60,6 @@ We will conduct triage of the incoming issues during the daily "Status call" if 
  * We will create release branches foe every release where we bump major or minor version.
  * Sprint starts on **Wednesday**
 
-## Meetings
-* Daily Status Meetings - daily 10Am EST
-
-| Day | First week | Second week |
-|-------- | -------- | -------- |
-|Wednesday|Sprint kickoff|(Feature Freeze) Normal triage/status|
-|Thursday|Normal triage/status|Normal triage/status|
-|Friday|Normal triage/status|Normal triage/status|
-|Monday|Demo + triage/status|Demo + triage/status + release prep|
-|Tuesday|Normal triage/status|Sprint wrap up/Release party|
-
-* Design meeting - Thursdays 9am EST
-
-| First week | Second week |
-|-------- | -------- |
-| Retrospective of the previous sprint | Actual design session |
-
 ## Roles
 
 * **Project coordinator** - this is the role similar to scrum master/project manager. It can be a rotating role. The person is responsible for making sure all the rituals are followed as described and the team knows what needs to be done and when.

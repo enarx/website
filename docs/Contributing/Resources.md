@@ -46,23 +46,5 @@ We use "boards" to collect all issues related to one aspect of the project, such
 
 You can see the various boards (projects, in Github parlance) here: https://github.com/enarx/enarx/projects
 
-## Join meetings & board review
-Also mentioned on the main how to contribute page, we host regular meetings where you can come say hi, ask questions, or just listen to learn more about what's happening in the project.
-
-The full Enarx calendar is available as a [Google Calendar](https://calendar.google.com/calendar/embed?src=leatqk15m1f34loatvatftkm48%40group.calendar.google.com&ctz=America%2FNew_York).
-
-The meetings happen on [Jitsi Meet](https://meet.jit.si/EnarxDaily). (You do not need any account to join.)
-
-To join these meetings, you can:
-- open [the link](https://meet.jit.si/EnarxDaily) in your usual browser
-  -and give access to microphone and camera, as you see fit
-- download the Jitsi Meet mobile app (Android: [Google Play](https://play.google.com/store/apps/details?id=org.jitsi.meet) or [F-Droid](https://f-droid.org/en/packages/org.jitsi.meet/), [iOS](https://apps.apple.com/us/app/jitsi-meet/id1165103905)
-  -  then enter the meeting ID (`EnarxDaily`)
-- dial-in by phone: +1.512.647.1431,,3117518640# or [visit this link](https://meet.jit.si/static/dialInInfo.html?room=EnarxDaily) to see more numbers.
-
-
-### In-meeting tips:
-- when someone's screen is being presented, you can click layout button at the bottom of the interface to switch layouts and get more in your screen (the four squares titled "Toggle tile view").
-
 ## Anything else?
 That's it! At this point, you should have everything you need to start contributing. If you feel anything is missing here, please let us know.

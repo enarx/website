@@ -33,15 +33,7 @@ Github has several explainers on issues:
 You can see the Enarx issues [here](https://github.com/enarx/enarx/issues)
 
 ## Join the chat
-Join the chat at [chat.enarx.dev](https://chat.enarx.dev) and come say hi, ask questions, or just read the conversation.
-
-## Join meetings & board review
-
-The full Enarx calendar is available as a [Google Calendar](https://calendar.google.com/calendar/embed?src=leatqk15m1f34loatvatftkm48%40group.calendar.google.com&ctz=America%2FNew_York).
-
-The meetings happen on [Jitsi Meet](https://meet.jit.si/EnarxDaily). (You do not need any account to join.)
-
-Please check the [Meetings](https://enarx.dev/meetings) page for more information.
+Join the chat at [chat.enarx.dev](https://chat.enarx.dev) and come say hi, ask questions, or just read the conversation. We also have GitHub [discussions](https://github.com/orgs/enarx/discussions).
 
 ## Anything else?
 That's it! At this point, you should have everything you need to start contributing. If you feel anything is missing here, please let us know.
