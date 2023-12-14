@@ -9,3 +9,5 @@ Learn more about the important characteristics of Privacy-enhancing technologies
 **Source**: Profian
 
 **Link**: https://profian.com/white-paper/pets-and-confidential-computing-compared/
+
+**PDF**: [PETS and Confidential Computing compared.pdf](/assets/docs/PETS_and_CC_compared.pdf)

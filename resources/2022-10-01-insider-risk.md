@@ -9,3 +9,5 @@ Every time an application runs on any platform – from the largest mainframe to
 **Source**: Profian
 
 **Link**: https://profian.com/white-paper/white-paper-managing-insider-risk-with-confidential-computing/
+
+**PDF**: [Managing Insider Risk with Confidential Computing](/assets/docs/Managing_Insider_Risk_with_Confidential_Computing.pdf)
