@@ -9,3 +9,5 @@ Every time an application runs on any platform – from the largest mainframe to
 **Source**: Profian
 
 **Link**: https://profian.com/white-paper/white-paper-the-3-types-of-runtime-security-isolation/
+
+**PDF**: [The Three Types of Runtime Isolation](/assets/docs/The_three_types_of_runtime_isolation.pdf)
